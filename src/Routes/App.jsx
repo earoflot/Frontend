@@ -6,13 +6,14 @@ import Footer from "../Components/Footer/Footer";
 import Home from "../Pages/Home";
 import { Outlet } from "react-router-dom";
 import Container from "../Container/Container";
-
+import CarouselComp from "../Components/CarouselComp/CarouselComp";
 function App() {
   return (
     <>
       <Container>
         <NavigationDrawer />
       </Container>
+      <CarouselComp />
 
       <Container>
         <Outlet />
