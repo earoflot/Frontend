@@ -1,3 +1,4 @@
+import "./NavigationDrawer.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -17,6 +18,9 @@ function CollapsibleExample() {
             </Nav.Link>
             <Nav.Link eventKey={1} as={Link} to={"/notifications"}>
               NOTIFICATIONS
+            </Nav.Link>
+            <Nav.Link eventKey={2} as={Link} to={"/game"}>
+              GAME
             </Nav.Link>
             <NavDropdown title="SERVICES" id="collapsible-nav-dropdown">
               <NavDropdown.Item>

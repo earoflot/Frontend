@@ -13,7 +13,7 @@ function App() {
       <Container>
         <NavigationDrawer />
       </Container>
-      <CarouselComp />
+      <div className="modalOverLay"></div>
 
       <Container>
         <Outlet />

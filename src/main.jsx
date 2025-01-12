@@ -12,6 +12,7 @@ import Placement from "./Pages/Placement.jsx";
 import About from "./Pages/About.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Exam from "./Pages/Exam.jsx";
+import Game from "./Pages/Game.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "/exam", element: <Exam /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/game", element: <Game /> },
     ],
   },
 ]);
