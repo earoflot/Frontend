@@ -1,6 +1,8 @@
 // Core Module
 import React, { useEffect, useState } from "react";
+
 // External Module
+import { useSelector } from "react-redux";
 import axios from "axios";
 // Local Module
 import NotificationsComp from "../Components/Notifications/NotificationsComp";

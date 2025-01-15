@@ -14,6 +14,9 @@ import Contact from "./Pages/Contact.jsx";
 import Exam from "./Pages/Exam.jsx";
 import Game from "./Pages/Game.jsx";
 
+import { Provider } from "react-redux";
+import Store from "./Store/index.js";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +37,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={Store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );

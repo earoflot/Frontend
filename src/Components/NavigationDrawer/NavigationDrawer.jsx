@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
+      <Container className="m">
         <Navbar.Brand>NEW INDIA INTERPRICES</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
