@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./Modal.css";
+import "../styles/Modal.css";
 import { useSelector } from "react-redux";
 
 function Modal() {

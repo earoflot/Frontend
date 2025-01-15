@@ -5,8 +5,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import axios from "axios";
 // Local Module
-import NotificationsComp from "../Components/Notifications/NotificationsComp";
-import PostComp from "../Components/Post/PostComp";
+import NotificationsComp from "../Components/NotificationsComp";
+import PostComp from "../Components/PostComp";
 
 export function NotificationsItems() {
   const [notificationData, setNotification] = useState([]);

@@ -1,6 +1,6 @@
-import logo from "./Airindia.webp";
-import logo1 from "./Airlines.webp";
-import logo2 from "./inda_img.png";
+import logo from "../assets/Airlines.webp";
+import logo1 from "../assets/Airlines.webp";
+import logo2 from "../assets/Airlines.webp";
 
 import Carousel from "react-bootstrap/Carousel";
 
