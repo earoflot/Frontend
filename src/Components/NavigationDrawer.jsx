@@ -19,12 +19,21 @@ function CollapsibleExample() {
             <Nav.Link eventKey={1} as={Link} to={"/notifications"}>
               NOTIFICATIONS
             </Nav.Link>
-            <Nav.Link eventKey={2} as={Link} to={"/game"}>
-              GAME
-            </Nav.Link>
+
             <NavDropdown title="SERVICES" id="collapsible-nav-dropdown">
               <NavDropdown.Item>
-                {" "}
+                <Nav.Link eventKey={11} as={Link} to={"/game"}>
+                  SHOP
+                </Nav.Link>
+                <Nav.Link eventKey={11} as={Link} to={"/game"}>
+                  GAME
+                </Nav.Link>
+                <Nav.Link eventKey={11} as={Link} to={"/game"}>
+                  JOB
+                </Nav.Link>
+                <Nav.Link eventKey={11} as={Link} to={"/game"}>
+                  EDUCATION
+                </Nav.Link>
                 <Nav.Link eventKey={2} as={Link} to={"/apply"}>
                   APPLY
                 </Nav.Link>
@@ -47,9 +56,31 @@ function CollapsibleExample() {
                 https://facebook.com
               </NavDropdown.Item>
             </NavDropdown>
+
             <Nav.Link eventKey={6} as={Link} to={"/about"}>
               ABOUT
             </Nav.Link>
+            <NavDropdown title="SETTINGS" id="collapsible-nav-dropdown">
+              <NavDropdown.Item>
+                <Nav.Link eventKey={11} as={Link} to={"/game"}>
+                  SECURITY
+                </Nav.Link>
+                <Nav.Link eventKey={11} as={Link} to={"/game"}>
+                  PRIVACY
+                </Nav.Link>
+                <Nav.Link eventKey={11} as={Link} to={"/game"}>
+                  ACCOUNTS
+                </Nav.Link>
+                <Nav.Link eventKey={11} as={Link} to={"/game"}>
+                  TERMS & CONDITIONS
+                </Nav.Link>
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                https://youtube.com
+              </NavDropdown.Item>
+            </NavDropdown>
+
             <Nav.Link eventKey={7} as={Link} to={"/contact"}>
               CONTACT
             </Nav.Link>
