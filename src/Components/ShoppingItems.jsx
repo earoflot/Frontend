@@ -1,20 +1,20 @@
-import { useDispatch, useSelector } from "react-redux";
-import { bagActions } from "../store/bagSlice";
-import { GrAddCircle } from "react-icons/gr";
-import { AiFillDelete } from "react-icons/ai";
+// import { useDispatch, useSelector } from "react-redux";
+// import { bagActions } from "../store/bagSlice";
+// import { GrAddCircle } from "react-icons/gr";
+// import { AiFillDelete } from "react-icons/ai";
 
-const HomeItem = ({ item }) => {
-  const dispatch = useDispatch();
-  const bagItems = useSelector((store) => store.bag);
-  const elementFound = bagItems.indexOf(item.id) >= 0;
+const ShoppingItems = ({ item }) => {
+  // const dispatch = useDispatch();
+  // const bagItems = useSelector((store) => store.bag);
+  // const elementFound = bagItems.indexOf(item.id) >= 0;
 
-  const handleAddToBag = () => {
-    dispatch(bagActions.addToBag(item.id));
-  };
+  // const handleAddToBag = () => {
+  //   dispatch(bagActions.addToBag(item.id));
+  // };
 
-  const handleRemove = () => {
-    dispatch(bagActions.removeFromBag(item.id));
-  };
+  // const handleRemove = () => {
+  //   dispatch(bagActions.removeFromBag(item.id));
+  // };
 
   return (
     <div className="item-container">
@@ -30,7 +30,7 @@ const HomeItem = ({ item }) => {
         <span className="discount">({item.discount_percentage}% OFF)</span>
       </div>
 
-      {elementFound ? (
+      {/* {elementFound ? (
         <button
           type="button"
           className="btn btn-add-bag btn-danger"
@@ -46,9 +46,9 @@ const HomeItem = ({ item }) => {
         >
           <GrAddCircle /> Add to Bag
         </button>
-      )}
+      )} */}
     </div>
   );
 };
 
-export default HomeItem;
+export default ShoppingItems;
