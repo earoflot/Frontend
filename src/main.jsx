@@ -17,6 +17,7 @@ import Shopping from "./Pages/Shopping.jsx";
 import Profile from "./Pages/Profile.jsx";
 import Wallet from "./Pages/Wallett.jsx";
 import ShoppingBag from "./Pages/ShoppingBag.jsx";
+import Settings from "./Pages/Settings.jsx";
 
 import { Provider } from "react-redux";
 import Store from "./Store/index.js";
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
       { path: "/profile", element: <Profile /> },
       { path: "/wallet", element: <Wallet /> },
       { path: "/shoppingbag", element: <ShoppingBag /> },
+      { path: "/settings", element: <Settings /> },
     ],
   },
 ]);

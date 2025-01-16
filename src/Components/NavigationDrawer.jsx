@@ -5,33 +5,35 @@ import "../styles/NavigationDrawer.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// Import External Module From React-Router-Dome
-import { Link } from "react-router-dom";
 // Local Module..........
-// Import Defualt Module From ServiceDropdown.jsx
 import ServiceDropdown from "../Components/ServiceDropdown";
-// Import Default Module From NavLink.jsx
+// Import Local Default Module From NavLink.jsx
 import NavLink from "./NavLink";
-// Import Name Module From Icon.jsx
+// Import Local Name Module From Icon.jsx
 import { AccountIcon } from "./Icon";
 import { ShoppingbagIcon } from "./Icon";
 import { WalletIcon } from "./Icon";
+import { SettingIcon } from "./Icon";
 
 // Navigation Functions...............
 function NavigationDrawer() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
       <Container className="m">
-        <Navbar.Brand>NEW INDIA INTERPRICES</Navbar.Brand>
-
+        <Navbar.Brand></Navbar.Brand>
         {/*import local icon module from icon.jsx*/}
-        <AccountIcon />
+
         <ShoppingbagIcon />
         <WalletIcon />
-
+        <SettingIcon />
+        <AccountIcon />
+        {/**NavBar Toggle............... */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav></Nav>
+          <Nav>
+            {/*import local Nav Link module from NavLink.jsx*/}
+            <NavLink />
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
