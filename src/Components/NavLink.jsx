@@ -9,7 +9,7 @@ import ServiceDropdown from "../Components/ServiceDropdown";
 
 const NavLink = () => {
   return (
-    <>
+    <Nav>
       {" "}
       <Nav.Link eventKey={0} as={Link} to={"/home"}>
         HOME
@@ -25,7 +25,7 @@ const NavLink = () => {
       <Nav.Link eventKey={7} as={Link} to={"/contact"}>
         CONTACT
       </Nav.Link>
-    </>
+    </Nav>
   );
 };
 export default NavLink;
