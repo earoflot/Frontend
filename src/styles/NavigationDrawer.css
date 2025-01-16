@@ -1,0 +1,9 @@
+.container-fluid{
+  background-color: #ECF0F1;
+  position: fixed;
+ 
+  border-bottom: 1px solid black;
+  
+  border-bottom-left-radius: 8px;
+  
+}

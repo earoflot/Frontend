@@ -2,7 +2,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 function NotificationsComp({ Title, Description }) {
   return (
-    <Accordion defaultActiveKey="1">
+    <Accordion defaultActiveKey="1" className="py-0">
       <Accordion.Item eventKey="2">
         <Accordion.Header>{Title}</Accordion.Header>
         <Accordion.Body>{Description}</Accordion.Body>

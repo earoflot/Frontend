@@ -11,9 +11,8 @@ import Modal from "../Components/Modal";
 function App() {
   return (
     <>
-      <Container>
-        <NavigationDrawer />
-      </Container>
+      <NavigationDrawer />
+
       <Container>
         <Modal />
       </Container>

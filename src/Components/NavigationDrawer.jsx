@@ -15,14 +15,15 @@ import { ShoppingbagIcon } from "./Icon";
 import { WalletIcon } from "./Icon";
 import { SettingIcon } from "./Icon";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/NavigationDrawer.css";
 // Navigation Functions...............
 function NavigationDrawer() {
   return (
-    <div className="container-fluid bg-light mt-0">
+    <div className="container-fluid ">
       <div className="container ">
         <div className="row">
           <Navbar collapseOnSelect expand="lg" className="col">
-            <Navbar.Brand className="me-lg-5">Manishquare</Navbar.Brand>
+            <Navbar.Brand className="me-lg-5"></Navbar.Brand>
             {/*import local icon module from icon.jsx*/}
 
             <ShoppingbagIcon className="mt-lg-4" />
