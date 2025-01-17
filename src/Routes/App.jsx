@@ -12,18 +12,11 @@ function App() {
   return (
     <>
       <NavigationDrawer />
-
-      <Container>
-        <Modal />
-      </Container>
-
       <Container>
         <Outlet />
       </Container>
 
-      <Container>
-        <Footer />
-      </Container>
+      <Footer />
     </>
   );
 }

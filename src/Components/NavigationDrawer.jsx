@@ -20,13 +20,13 @@ import "../styles/NavigationDrawer.css";
 function NavigationDrawer() {
   return (
     <div className="container-fluid ">
-      <div className="container ">
+      <div className="container">
         <div className="row">
           <Navbar collapseOnSelect expand="lg" className="col">
             <Navbar.Brand className="me-lg-5"></Navbar.Brand>
             {/*import local icon module from icon.jsx*/}
 
-            <ShoppingbagIcon className="mt-lg-4" />
+            <ShoppingbagIcon className="mt-lg-4 " />
             <WalletIcon />
             <SettingIcon />
             <AccountIcon />
