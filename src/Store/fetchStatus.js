@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-const fetchStatusSlice = createSlice({
+const fetchStatus = createSlice({
   name: 'fetchStatus',
   initialState: {
     fetchDone: false, // false: 'PENDING' and true: 'DONE'
@@ -19,6 +19,6 @@ const fetchStatusSlice = createSlice({
   }
 });
 
-export const fetchStatusActions = fetchStatusSlice.actions;
+export const fetchStatusActions = fetchStatus.actions;
 
-export default fetchStatusSlice;
+export default fetchStatus;

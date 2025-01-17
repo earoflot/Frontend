@@ -9,11 +9,16 @@ import { IoBagCheckSharp } from "react-icons/io5";
 import { IoWalletSharp } from "react-icons/io5";
 import { IoSettingsSharp } from "react-icons/io5";
 
+import { useSelector } from "react-redux";
 // It is name export function......its export ShoppingBag Icon
+
 export function ShoppingbagIcon() {
+  const bags = useSelector((store) => store.bagItems);
+
   return (
-    <Nav.Link eventKey={6} as={Link} to={"/shoppingbag"} className="sms-lg-5">
+    <Nav.Link eventKey={1} as={Link} to={"/shoppingbag"} className="sms-lg-5">
       <IoBagCheckSharp />
+      {bags.length}
     </Nav.Link>
   );
 }
