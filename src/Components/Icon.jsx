@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 // It is name export function......its export ShoppingBag Icon
 
 export function ShoppingbagIcon() {
-  const bags = useSelector((store) => store.bagItems);
+  const bags = useSelector((store) => store.shoppingbagSlice);
 
   return (
     <Nav.Link eventKey={1} as={Link} to={"/shoppingbag"} className="sms-lg-5">

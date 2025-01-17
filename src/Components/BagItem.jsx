@@ -1,13 +1,13 @@
-// import { useDispatch } from "react-redux";
-// import { RiDeleteBin5Fill } from "react-icons/ri";
-// import { bagActions } from "../store/bagSlice";
+import { useDispatch } from "react-redux";
+import { RiDeleteBin5Fill } from "react-icons/ri";
+import { shoppingbagActions } from "../Store/shoppingbagSlice";
 
 const BagItem = ({ item }) => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const handleRemoveItem = () => {
-  //   dispatch(bagActions.removeFromBag(item.id));
-  // };
+  const handleRemoveItem = () => {
+    dispatch(shoppingbagActions.removeFromBag(item.id));
+  };
 
   return (
     <div className="bag-item-container">
@@ -34,9 +34,9 @@ const BagItem = ({ item }) => {
         </div>
       </div>
 
-      {/* <div className="remove-from-cart" onClick={handleRemoveItem}>
+      <div className="remove-from-cart" onClick={handleRemoveItem}>
         <RiDeleteBin5Fill />
-      </div> */}
+      </div>
     </div>
   );
 };

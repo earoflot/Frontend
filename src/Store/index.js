@@ -2,18 +2,21 @@
 import {configureStore, createSlice} from "@reduxjs/toolkit"
 // Local Module
 import modalSlice from "./modal"
-import shoppingItems from "./shoppingItems";
+import shoppinghomeSlice from "./shoppinghomeSlice";
 import fetchStatus from "./fetchStatus";
-import bagItems from "./bagItems";
+import shoppingbagSlice from "./shoppingbagSlice";
 //...............................
 
 // Store Configure............
 const store = configureStore({reducer:{
   // Import local slice module in modaljs.........
-  modal: modalSlice.reducer,
-  shopping: shoppingItems.reducer,
+  // fetching backend 
   fetchStatus: fetchStatus.reducer,
-  bagItems: bagItems.reducer, 
+  modal: modalSlice.reducer,
+
+  shopping: shoppinghomeSlice.reducer,
+  
+  shoppingbagSlice: shoppingbagSlice.reducer, 
 
 
 }});
