@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 // create a shopping home silce store...........
 const notificationsSlice = createSlice({
-  name: "jobItem",
+  name: "notification",
   initialState: [],
   reducers: {
     addItems : (store,action) => {

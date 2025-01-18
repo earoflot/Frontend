@@ -6,12 +6,12 @@ import NotificationsComp from "../Components/NotificationsComp";
 // Name Import...........;
 
 export default function Notifications() {
-  const items = useSelector((store) => store.notificationsSlice);
+  const notifs = useSelector((store) => store.notificationsSlice);
 
   return (
     <Container>
-      {items.map((item) => (
-        <NotificationsComp key={item.id} items={items} />
+      {notifs.map((noti) => (
+        <NotificationsComp key={noti.id} notifs={noti} />
       ))}
     </Container>
   );

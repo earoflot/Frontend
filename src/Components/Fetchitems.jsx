@@ -15,16 +15,17 @@ const FetchItems = () => {
 
     dispatch(fetchStatusActions.markFetchingStarted());
     axios.get("/user/api/shopping").then((respones) => {
+      axios.get("/user/api/job").then((respones) => {
+        dispatch(jobActions.addItems(respones.data));
+      });
+      axios.get("/user/api/notification").then((respones) => {
+        dispatch(notificationsActions.addItems(respones.data));
+      });
+
       dispatch(fetchStatusActions.markFetchDone());
       dispatch(fetchStatusActions.markFetchingFinished());
 
       dispatch(shoppinghomeActions.addItems(respones.data));
-    });
-    dispatch(fetchStatusActions.markFetchingStarted());
-    axios.get("/user/api/job").then((respones) => {
-      dispatch(fetchStatusActions.markFetchDone());
-      dispatch(fetchStatusActions.markFetchingFinished());
-      dispatch(jobActions.addItems(respones.data));
     });
   }, [fetchStatus]);
 
