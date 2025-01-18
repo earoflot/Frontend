@@ -6,6 +6,9 @@ import shoppinghomeSlice from "./shoppinghomeSlice";
 import fetchStatus from "./fetchStatus";
 import shoppingbagSlice from "./shoppingbagSlice";
 import jobSlice from "./jobSlice";
+import homeSlice from "./homeSlice";
+import notificationsSlice from "./notificationsSlice";
+import currentnotifsSlice from "./currentnotifsSlice";
 //...............................
 
 // Store Configure............
@@ -14,13 +17,20 @@ const store = configureStore({reducer:{
   // fetching backend 
   fetchStatus: fetchStatus.reducer,
   
-  modal: modalSlice.reducer,
+  homeSlice: homeSlice.reducer,
+  
+ 
+  
+  currentnotifsSlice: currentnotifsSlice.reducer,
+
 
   shopping: shoppinghomeSlice.reducer,
   
   shoppingbagSlice: shoppingbagSlice.reducer,
   
   jobSlice: jobSlice.reducer,
+  notificationsSlice: notificationsSlice.reducer,
+
 
 
 

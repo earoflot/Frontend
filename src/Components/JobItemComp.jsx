@@ -1,7 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
 function PostComp({ item }) {
-  const dispatch = useDispatch();
-
   return (
     <>
       {/* This is a Gound Handling */}

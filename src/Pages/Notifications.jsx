@@ -1,13 +1,18 @@
-// Core Module
-
 // External Module
-
+import { useSelector } from "react-redux";
 // Local Module
-// Default Import..........
 import Container from "../Container/Container";
-// Name Import...........
-import { NotificationsItems } from "../Conversion/Conversion";
+import NotificationsComp from "../Components/NotificationsComp";
+// Name Import...........;
 
 export default function Notifications() {
-  return <NotificationsItems />;
+  const items = useSelector((store) => store.notificationsSlice);
+
+  return (
+    <Container>
+      {items.map((item) => (
+        <NotificationsComp key={item.id} items={items} />
+      ))}
+    </Container>
+  );
 }

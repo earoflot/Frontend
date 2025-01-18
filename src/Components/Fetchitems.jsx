@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { shoppinghomeActions } from "../Store/shoppinghomeSlice";
 import { jobActions } from "../Store/jobSlice";
-
+import { notificationsActions } from "../Store/notificationsSlice";
 import { fetchStatusActions } from "../Store/fetchStatus";
 
 const FetchItems = () => {
@@ -17,6 +17,7 @@ const FetchItems = () => {
     axios.get("/user/api/shopping").then((respones) => {
       dispatch(fetchStatusActions.markFetchDone());
       dispatch(fetchStatusActions.markFetchingFinished());
+
       dispatch(shoppinghomeActions.addItems(respones.data));
     });
     dispatch(fetchStatusActions.markFetchingStarted());
