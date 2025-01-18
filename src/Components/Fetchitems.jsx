@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { shoppinghomeActions } from "../Store/shoppinghomeSlice";
+import { jobActions } from "../Store/jobSlice";
 
 import { fetchStatusActions } from "../Store/fetchStatus";
 
@@ -17,6 +18,12 @@ const FetchItems = () => {
       dispatch(fetchStatusActions.markFetchDone());
       dispatch(fetchStatusActions.markFetchingFinished());
       dispatch(shoppinghomeActions.addItems(respones.data));
+    });
+    dispatch(fetchStatusActions.markFetchingStarted());
+    axios.get("/user/api/job").then((respones) => {
+      dispatch(fetchStatusActions.markFetchDone());
+      dispatch(fetchStatusActions.markFetchingFinished());
+      dispatch(jobActions.addItems(respones.data));
     });
   }, [fetchStatus]);
 

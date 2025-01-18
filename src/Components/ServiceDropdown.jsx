@@ -22,20 +22,11 @@ const ServiceDropdown = () => {
         <Nav.Link eventKey={11} as={Link} to={"/game"}>
           GAME
         </Nav.Link>
-        <Nav.Link eventKey={11} as={Link} to={"/game"}>
+        <Nav.Link eventKey={11} as={Link} to={"/job"}>
           JOB
         </Nav.Link>
-        <Nav.Link eventKey={11} as={Link} to={"/game"}>
+        <Nav.Link eventKey={11} as={Link} to={"/education"}>
           EDUCATION
-        </Nav.Link>
-        <Nav.Link eventKey={2} as={Link} to={"/apply"}>
-          APPLY
-        </Nav.Link>
-        <Nav.Link eventKey={3} as={Link} to={"/post"}>
-          POST
-        </Nav.Link>
-        <Nav.Link eventKey={4} as={Link} to={"/placement"}>
-          PLACEMENT
         </Nav.Link>
         <Nav.Link eventKey={5} as={Link} to={"/exam"}>
           EXAMS

@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 // Local Module
 import NotificationsComp from "../Components/NotificationsComp";
-import PostComp from "../Components/PostComp";
+// import PostComp from "../Components/JobItemComp";
 
 export function NotificationsItems() {
   const [notificationData, setNotification] = useState([]);
@@ -28,17 +28,17 @@ export function NotificationsItems() {
   );
 }
 
-export function JobPost({ postItems }) {
-  return (
-    <>
-      {postItems.map((postData) => (
-        <PostComp
-          key={postData.id}
-          Title={postData.Title}
-          Description={postData.Description}
-          Image={postData.Image}
-        />
-      ))}
-    </>
-  );
-}
+// export function JobPost({ postItems }) {
+//   return (
+//     <>
+//       {postItems.map((postData) => (
+//         <PostComp
+//           key={postData.id}
+//           Title={postData.Title}
+//           Description={postData.Description}
+//           Image={postData.Image}
+//         />
+//       ))}
+//     </>
+//   );
+// }

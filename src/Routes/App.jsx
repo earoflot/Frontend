@@ -1,14 +1,15 @@
+// Core Module...........
+
+// External Module............
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
-
+import { Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
+// Local Module..............
 import NavigationDrawer from "../Components/NavigationDrawer";
 import Footer from "../Components/Footer";
-
-import { Outlet } from "react-router-dom";
 import Container from "../Container/Container";
-import Modal from "../Components/Modal";
 import FetchItems from "../Components/Fetchitems";
-import { useSelector } from "react-redux";
 import LoadingSpinner from "../Components/LoadingSpinner";
 
 function App() {

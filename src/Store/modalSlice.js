@@ -1,10 +1,10 @@
 // Import External Module.........
-import {configureStore, createSlice} from "@reduxjs/toolkit"
+import {createSlice} from "@reduxjs/toolkit"
 
 // Create a modalslice in @reduxjs/toolkit.........
 const modalSlice = createSlice({
   name: 'Modal',
-  initialState: { modalValue:"Enquary Now"},
+  initialState: ["Enquary Now"],
   reducers: {
 
   },

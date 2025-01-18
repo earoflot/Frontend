@@ -1,5 +1,5 @@
-import React from "react";
-
+// Local Module.............
+import Container from "../Container/Container";
 export default function Exam() {
-  return <div>Exam</div>;
+  return <Container>Exam</Container>;
 }
