@@ -20,7 +20,7 @@ import Profile from "./Pages/Profile.jsx";
 // Navigation Drawer Link import.........................
 import Home from "./Pages/Home.jsx";
 import Notifications from "./Pages/Notifications.jsx";
-import Shopping from "./Pages/Shopping.jsx";
+import Shopping from "./Pages/ShopHome.jsx";
 import Game from "./Pages/Game.jsx";
 import Job from "./Pages/Job.jsx";
 import Education from "./Pages/Education.jsx";

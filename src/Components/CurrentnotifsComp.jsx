@@ -1,5 +1,6 @@
+// External Module.......................
 import Accordion from "react-bootstrap/Accordion";
-
+// Current notifications function..............
 const Currentnotifs = ({ crrnotifs }) => {
   return (
     <>

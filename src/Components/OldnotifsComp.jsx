@@ -1,5 +1,6 @@
+// External Module...................
 import Accordion from "react-bootstrap/Accordion";
-
+// Old notification function.............
 function NotificationsComp({ notifs }) {
   return (
     <>

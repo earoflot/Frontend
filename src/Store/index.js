@@ -1,5 +1,5 @@
 // External Module
-import {configureStore, createSlice} from "@reduxjs/toolkit"
+import {configureStore} from "@reduxjs/toolkit"
 // Local Module
 import modalSlice from "./modalSlice"
 import shoppinghomeSlice from "./shoppinghomeSlice";
@@ -24,7 +24,7 @@ const store = configureStore({reducer:{
   currentnotifsSlice: currentnotifsSlice.reducer,
 
 
-  shopping: shoppinghomeSlice.reducer,
+  shoppinghomeSlice: shoppinghomeSlice.reducer,
   
   shoppingbagSlice: shoppingbagSlice.reducer,
   

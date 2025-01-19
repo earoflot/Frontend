@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 const BagSummary = () => {
   const bagItems = useSelector((state) => state.shoppingbagSlice);
-  const items = useSelector((state) => state.shopping);
+  const items = useSelector((state) => state.shoppinghomeSlice);
   const finalItems = items.filter((item) => {
     const itemIndex = bagItems.indexOf(item.id);
     return itemIndex >= 0;

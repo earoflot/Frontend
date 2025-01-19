@@ -1,10 +1,13 @@
-import BagSummary from "../Components/BagSummary";
-import BagItem from "../Components/BagItem";
+// External Module..........
 import { useSelector } from "react-redux";
+// Local Module..................
+import BagItem from "../Components/BagItem";
+import BagSummary from "../Components/BagSummary";
 
 const ShoppingBag = () => {
+  //
   const bagItems = useSelector((state) => state.shoppingbagSlice);
-  const items = useSelector((state) => state.shopping);
+  const items = useSelector((state) => state.shoppinghomeSlice);
   const finalItems = items.filter((item) => {
     const itemIndex = bagItems.indexOf(item.id);
     return itemIndex >= 0;
@@ -13,7 +16,7 @@ const ShoppingBag = () => {
     <>
       <BagSummary />
       {finalItems.map((item) => (
-        <BagItem item={item} />
+        <BagItem key={item.id} item={item} />
       ))}
     </>
   );
