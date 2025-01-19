@@ -5,6 +5,7 @@ const currentnotifsSlice = createSlice({
   initialState: [],
   reducers: {
     addItems : (state,action ) => {
+      
       return action.payload;
     }
   }

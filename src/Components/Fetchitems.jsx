@@ -4,7 +4,9 @@ import axios from "axios";
 import { shoppinghomeActions } from "../Store/shoppinghomeSlice";
 import { jobActions } from "../Store/jobSlice";
 import { notificationsActions } from "../Store/notificationsSlice";
+import { currentnotifsActions } from "../Store/currentnotifsSlice";
 import { fetchStatusActions } from "../Store/fetchStatus";
+import { homeActions } from "../Store/homeSlice";
 
 const FetchItems = () => {
   const fetchStatus = useSelector((store) => store.fetchStatus);
@@ -20,6 +22,12 @@ const FetchItems = () => {
       });
       axios.get("/user/api/notification").then((respones) => {
         dispatch(notificationsActions.addItems(respones.data));
+      });
+      axios.get("/user/api/currentnotifs").then((respones) => {
+        dispatch(currentnotifsActions.addItems(respones.data));
+      });
+      axios.get("/user/api/home").then((respones) => {
+        dispatch(homeActions.addItems(respones.data));
       });
 
       dispatch(fetchStatusActions.markFetchDone());

@@ -8,7 +8,7 @@ function PostComp({ item }) {
           <h5 className="Gound Handling">{item.title}</h5>
           <p className="card-text">{item.description}</p>
           <p className="card-text">
-            <small className="text-body-secondary">{item.update}</small>
+            <small className="text-body-secondary">{item.updated}</small>
           </p>
         </div>
       </div>

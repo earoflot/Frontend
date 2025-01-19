@@ -5,6 +5,7 @@ const homeSlice = createSlice({
   initialState: [],
   reducers:{
     addItems: (state,action) => {
+      
       return action.payload;
     }
   }

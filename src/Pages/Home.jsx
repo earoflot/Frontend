@@ -4,12 +4,17 @@ import React from "react";
 
 //Local Module................
 import Container from "../Container/Container";
-import CarouselComp from "../Components/CarouselComp";
+import HomeImages from "../Components/HomeimagesComp";
+import { useSelector } from "react-redux";
 
-export default function Home() {
+const Home = () => {
+  const items = useSelector((store) => store.homeSlice);
+
   return (
     <Container>
-      <CarouselComp />
+      <HomeImages />
     </Container>
   );
-}
+};
+
+export default Home;
