@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <NavigationDrawer />
+
       <Container>
         <FetchItems />
         {fetchStatus.currentlyFetching ? <LoadingSpinner /> : <Outlet />}

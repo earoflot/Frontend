@@ -1,0 +1,171 @@
+
+
+/* xl................*/
+@media (min-width : 1200px) and (max-width : 1399px){
+  .shopHomcomp{
+    background-color: red;
+    width: 20%;
+  }
+}
+/* lg...................*/
+@media (min-width : 992px) and (max-width : 1199px){
+  .shopHomcomp{
+    background-color: green;
+  }
+}
+/* md.........Google Brosers Desktop site..............*/
+@media (min-width : 768px) and (max-width : 991px){
+  .shopHomcomp{
+    background-color: blue;
+    width: 50%;
+  }
+}
+
+
+/* xs......Modile Divices.................*/
+@media (min-width : 0px) and (max-width : 575px){
+  /* Shopping home component fist div*/
+  .shopHomcomp{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+  }
+  /* Styles image div*/
+  .imageDiv{
+    background-size: cover;
+    height: 60%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  /* shopping elements images items */
+  .itemImage{
+    width: 100%;
+    height: 100%; 
+  }
+  /* shopping ratting elements items styles....*/
+  .rating{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  /* shopping elements company name  styles.......*/
+  .companyName{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  /* shopping elements items name and styles.........*/
+  .itemName{
+    text-align: center;
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+  }
+  /* shopping price elements*/
+  .price{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #282c3f;
+    white-space: nowrap;
+  }
+  /* shopping current price elements.......*/
+  .currentPrice{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+  }
+  /* shopping items original prices.......*/
+  .originalPrice{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  /* shopping items discount prices...........*/
+  .discount{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  /* Shop button div Styles.........*/
+  .shopBtn{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* sm.......SM MOBAIL...LENDSCAP MODE ................*/
+@media (min-width : 576px) and (max-width : 767px){
+  .shopHomcomp{
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+    display: flex;
+   
+  }
+  /* Styles image div*/
+  .imageDiv{
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  /* shopping elements images items */
+  .itemImage{
+    width: 100%;
+    height: 100%; 
+  }
+  /* shopping ratting elements items styles....*/
+  .rating{
+   
+  }
+  /* shopping elements company name  styles.......*/
+  .companyName{
+  
+  }
+  /* shopping elements items name and styles.........*/
+  .itemName{
+   
+  }
+  /* shopping price elements*/
+  .price{
+    
+  }
+  /* shopping current price elements.......*/
+  .currentPrice{
+    
+  }
+  /* shopping items original prices.......*/
+  .originalPrice{
+   
+  }
+  /* shopping items discount prices...........*/
+  .discount{
+    
+  }
+  /* Shop button div Styles.........*/
+  .shopBtn{
+    
+  }
+}
