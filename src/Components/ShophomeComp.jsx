@@ -21,7 +21,10 @@ const ShoppingItems = ({ item }) => {
   };
 
   return (
-    <div className={styles.shopHomcomp}>
+    <div
+      /* col-mobile col-sm MOBAIL...LENDSCAP MODE col-md Google Brosers Desktop site or paid col-lg paind or leptop */
+      className="col-6 col-sm-4 col-md-3 col-lg-2" /*{`col${styles.shopHomcomp}`}*/
+    >
       <div className={styles.imageDiv}>
         <img className={styles.itemImage} src={item.image} alt="item image" />
       </div>
@@ -53,7 +56,7 @@ const ShoppingItems = ({ item }) => {
             className="btn btn-add-bag btn-success"
             onClick={handleAddToBag}
           >
-            <GrAddCircle /> Add to Bag
+            <GrAddCircle /> Buy now
           </button>
         )}
       </div>

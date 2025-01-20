@@ -11,7 +11,7 @@ const ShoppingHome = () => {
 
   return (
     <Container>
-      <div className="row">
+      <div className="row m-1">
         {items.map((item) => (
           <ShoppingItems key={item.id} item={item} />
         ))}

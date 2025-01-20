@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 // Local Module..................
 import BagItem from "../Components/BagItem";
 import BagSummary from "../Components/BagSummary";
+import Container from "../Container/Container";
 
 const ShoppingBag = () => {
   //
@@ -13,12 +14,21 @@ const ShoppingBag = () => {
     return itemIndex >= 0;
   });
   return (
-    <>
-      <BagSummary />
-      {finalItems.map((item) => (
-        <BagItem key={item.id} item={item} />
-      ))}
-    </>
+    <Container>
+      {" "}
+      <div className="row m-1">
+        <div className="col-md-6">
+          {" "}
+          {finalItems.map((item) => (
+            <BagItem key={item.id} item={item} />
+          ))}
+        </div>
+        <div className="col-md-6">
+          {" "}
+          <BagSummary />
+        </div>
+      </div>
+    </Container>
   );
 };
 export default ShoppingBag;

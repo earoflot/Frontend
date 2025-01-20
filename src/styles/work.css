@@ -1,19 +1,19 @@
 
 
-/* xl................*
+/* xl................*/
 @media (min-width : 1200px) and (max-width : 1399px){
   .shopHomcomp{
     background-color: red;
     width: 20%;
   }
 }
-/* lg...................*
+/* lg...................*/
 @media (min-width : 992px) and (max-width : 1199px){
   .shopHomcomp{
     background-color: green;
   }
 }
-/* md.........Google Brosers Desktop site..............*
+/* md.........Google Brosers Desktop site..............*/
 @media (min-width : 768px) and (max-width : 991px){
   .shopHomcomp{
     background-color: blue;
@@ -23,12 +23,20 @@
 
 
 /* xs......Modile Divices.................*/
-
+@media (min-width : 0px) and (max-width : 575px){
   /* Shopping home component fist div*/
-  
+  .shopHomcomp{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+  }
   /* Styles image div*/
   .imageDiv{
-    background-size: cover; 
+    background-size: cover;
+    height: 60%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   /* shopping elements images items */
   .itemImage{
@@ -100,13 +108,12 @@
   }
   /* Shop button div Styles.........*/
   .shopBtn{
-    margin-left: 0%;
-    margin-right: 0%;
-   
+    margin-left: 10%;
+    margin-right: 10%;
   }
+}
 
-
-/* sm.......SM MOBAIL...LENDSCAP MODE ................*
+/* sm.......SM MOBAIL...LENDSCAP MODE ................*/
 @media (min-width : 576px) and (max-width : 767px){
   .shopHomcomp{
     background-color: yellow;
@@ -116,5 +123,49 @@
     display: flex;
    
   }
-  /* Styles image div*
-}*/
+  /* Styles image div*/
+  .imageDiv{
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  /* shopping elements images items */
+  .itemImage{
+    width: 100%;
+    height: 100%; 
+  }
+  /* shopping ratting elements items styles....*/
+  .rating{
+   
+  }
+  /* shopping elements company name  styles.......*/
+  .companyName{
+  
+  }
+  /* shopping elements items name and styles.........*/
+  .itemName{
+   
+  }
+  /* shopping price elements*/
+  .price{
+    
+  }
+  /* shopping current price elements.......*/
+  .currentPrice{
+    
+  }
+  /* shopping items original prices.......*/
+  .originalPrice{
+   
+  }
+  /* shopping items discount prices...........*/
+  .discount{
+    
+  }
+  /* Shop button div Styles.........*/
+  .shopBtn{
+    
+  }
+}

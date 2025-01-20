@@ -1,4 +1,4 @@
-
+/* */
 
  Main section 
 .banner_container {
@@ -80,6 +80,7 @@
   padding: 5px 15px;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .bag-item-count {
   background-color: #f16565;
@@ -122,11 +123,13 @@ a.action_container:link {
 .bag-summary {
   vertical-align: top;
   display: inline-block;
-  width: 35%;
+  width: 100%;
   padding: 24px 0 0 16px;
   color: #282c3f;
   font-size: 13px;
   line-height: 1.42857143;
+
+  background-color: #eaeaec;
 }
 
 .bag-details-container {
@@ -142,6 +145,7 @@ a.action_container:link {
 
 .price-item {
   margin-bottom: 12px;
+  margin-right: 12px;
   line-height: 16px;
   font-size: 14px;
   color: #282c3f;
@@ -149,6 +153,7 @@ a.action_container:link {
 
 .price-item-value {
   float: right;
+  margin-right: 12px;
 }
 
 .priceDetail-base-discount {
@@ -242,4 +247,4 @@ a.action_container:link {
 
 .spinner {
   margin: 100px 0px;
-}  
+}   
