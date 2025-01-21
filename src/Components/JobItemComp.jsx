@@ -9,12 +9,15 @@ function PostComp({ item }) {
         <img src={item.image} className="img-fluid" alt="..." />
 
         <div className="card-body">
-          <h5 className="Gound Handling">{item.title}</h5>
-          <p className="card-text">{item.description}</p>
+          <h5 className={styles.jobTitle}>{item.title}</h5>
+          <p className={styles.jobDescription}>{item.description}</p>
           <p className="card-text">
-            <small className="text-body-secondary">{item.updated}</small>
+            <small className={styles.jobUpdate}>{item.updated}</small>
           </p>
         </div>
+        <button className={styles.btnApply}>
+          <div className="css-xjhrni">Apply now</div>
+        </button>
       </div>
     </div>
   );

@@ -22,8 +22,9 @@ function App() {
         <FetchItems />
         {fetchStatus.currentlyFetching ? <LoadingSpinner /> : <Outlet />}
       </Container>
-
-      <Footer />
+      <Container>
+        <Footer />
+      </Container>
     </>
   );
 }

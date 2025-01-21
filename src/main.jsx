@@ -42,7 +42,6 @@ const router = createBrowserRouter([
       { path: "/wallet", element: <Wallet /> },
       { path: "/settings", element: <Settings /> },
       { path: "/profile", element: <Profile /> },
-
       // Route on NavigationDrawer Link Module...............
       { path: "/notifications", element: <Notifications /> },
       { path: "/shop", element: <Shopping /> },

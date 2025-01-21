@@ -3,18 +3,26 @@
 }
 .navItems{
   background-color:  #ECF0F1;
-  margin-top: -5px;
-  margin-bottom: -5px;
+  margin-top: -6px;
+  margin-bottom: -10px;
   padding-top: 0px;
+  
 }
 .navLinks{
-  
+  background-color:  #ECF0F1;
+  margin-top: -0px;
+  margin-bottom: -0px;
 }
 .navDivider{
  
-  border: 1px solid #0A66C2;
+  background-color:  #ECF0F1;
+  margin-top: 10px;
+  margin-bottom: -0px;
 }
 
 .socalLink{
   background-color:  #ECF0F1;
+  color: green;
+  margin-top: 0px;
+  margin-bottom: -7px;
 }

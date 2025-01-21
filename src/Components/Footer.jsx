@@ -24,19 +24,32 @@ function Footer() {
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/apply" className="nav-link p-0 text-body-secondary">
-                  APPLY
+                <Link to="/shop" className="nav-link p-0 text-body-secondary">
+                  SHOP
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/post" className="nav-link p-0 text-body-secondary">
-                  JOB POST
+                <Link to="/game" className="nav-link p-0 text-body-secondary">
+                  GAME
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">
-                  PLACEMENT
-                </a>
+                <Link to="/job" className="nav-link p-0 text-body-secondary">
+                  JOB
+                </Link>
+              </li>
+              <li className="nav-item mb-2">
+                <Link
+                  to="/education"
+                  className="nav-link p-0 text-body-secondary"
+                >
+                  EDUCATION
+                </Link>
+              </li>
+              <li className="nav-item mb-2">
+                <Link to="/exam" className="nav-link p-0 text-body-secondary">
+                  EXAMS
+                </Link>
               </li>
             </ul>
           </div>
