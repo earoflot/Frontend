@@ -1,0 +1,26 @@
+.ffGame{
+  border: 1px solid rgba(90,90,90);
+  border-radius: 6px;
+  height: 300px;
+  margin-bottom: 10px;
+  padding: 10px;
+  
+}
+
+.ffInput{
+  width: 100%;
+  height: 29%;
+  font-size: 25px;
+}
+.ffBtndiv{
+ 
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ffBtn{
+width: 25%;
+height: 40px;
+margin: 3px;
+}
