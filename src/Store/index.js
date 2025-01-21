@@ -10,6 +10,7 @@ import homeSlice from "./homeSlice";
 import notificationsSlice from "./notificationsSlice";
 import currentnotifsSlice from "./currentnotifsSlice";
 import gameSlice from "./gameSlice";
+import gamesummarySlice from "./gamesummarySlice";
 //...............................
 
 // Store Configure............
@@ -34,6 +35,7 @@ const store = configureStore({reducer:{
   notificationsSlice: notificationsSlice.reducer,
 
   gameSlice: gameSlice.reducer,
+  gamesummarySlice: gamesummarySlice.reducer,
 
 
 
