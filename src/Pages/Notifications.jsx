@@ -15,12 +15,19 @@ export default function Notifications() {
 
   return (
     <Container>
-      {current_notifs.map((crrnoti) => (
-        <Current_notifications key={crrnoti.id} crrnotifs={crrnoti} />
-      ))}
-      {old_notifs.map((noti) => (
-        <Old_notifications key={noti.id} notifs={noti} />
-      ))}
+      <div className="row">
+        <div className="col-md-6">
+          {current_notifs.map((crrnoti) => (
+            <Current_notifications key={crrnoti.id} crrnotifs={crrnoti} />
+          ))}
+        </div>
+        <div className="col-md-6">
+          {" "}
+          {old_notifs.map((noti) => (
+            <Old_notifications key={noti.id} notifs={noti} />
+          ))}
+        </div>
+      </div>
     </Container>
   );
 }

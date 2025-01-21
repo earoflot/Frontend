@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import styles from "../styles/BagSummary.module.css";
 
 const BagSummary = () => {
   const bagItems = useSelector((state) => state.shoppingbagSlice);
@@ -21,30 +22,32 @@ const BagSummary = () => {
   let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEES;
 
   return (
-    <div className="bag-summary">
-      <div className="bag-details-container">
-        <div className="price-header">PRICE DETAILS ({totalItem} Items) </div>
-        <div className="price-item">
-          <span className="price-item-tag">Total MRP</span>
-          <span className="price-item-value">₹{totalMRP}</span>
+    <div className={styles.bagSummary}>
+      <div className={styles.bagdetailsContainer}>
+        <div className={styles.priceHeader}>
+          PRICE DETAILS ({totalItem} Items)
         </div>
-        <div className="price-item">
+        <div className={styles.priceItem}>
+          <span className="price-item-tag">Total MRP</span>
+          <span className={styles.priceitemValue}>₹{totalMRP}</span>
+        </div>
+        <div className={styles.priceItem}>
           <span className="price-item-tag">Discount on MRP</span>
           <span className="price-item-value priceDetail-base-discount">
             -₹{totalDiscount}
           </span>
         </div>
-        <div className="price-item">
+        <div className={styles.priceItem} s>
           <span className="price-item-tag">Convenience Fee</span>
-          <span className="price-item-value">₹99</span>
+          <span className={styles.priceitemValue}>₹99</span>
         </div>
         <hr />
-        <div className="price-footer">
+        <div className={styles.priceFooter}>
           <span className="price-item-tag">Total Amount</span>
-          <span className="price-item-value">₹{finalPayment}</span>
+          <span className={styles.priceitemValue}>₹{finalPayment}</span>
         </div>
       </div>
-      <button className="btn-place-order">
+      <button className={styles.btnplaceOrder}>
         <div className="css-xjhrni">PLACE ORDER</div>
       </button>
     </div>

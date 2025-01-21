@@ -13,9 +13,11 @@ const Job = () => {
 
   return (
     <Container>
-      {items.map((item) => (
-        <JobItemComp key={item.id} item={item} />
-      ))}
+      <div className="row">
+        {items.map((item) => (
+          <JobItemComp key={item.id} item={item} />
+        ))}
+      </div>
     </Container>
   );
 };

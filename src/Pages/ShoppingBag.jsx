@@ -16,7 +16,7 @@ const ShoppingBag = () => {
   return (
     <Container>
       {" "}
-      <div className="row m-1">
+      <div className="row ">
         <div className="col-md-6">
           {" "}
           {finalItems.map((item) => (
