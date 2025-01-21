@@ -16,15 +16,23 @@ function App() {
   const fetchStatus = useSelector((store) => store.fetchStatus);
   return (
     <>
-      <NavigationDrawer />
+      <header>
+        {" "}
+        <NavigationDrawer />
+      </header>
+      <main>
+        <Container>
+          <FetchItems />
+          {fetchStatus.currentlyFetching ? <LoadingSpinner /> : <Outlet />}
+        </Container>
+      </main>
 
-      <Container>
-        <FetchItems />
-        {fetchStatus.currentlyFetching ? <LoadingSpinner /> : <Outlet />}
-      </Container>
-      <Container>
-        <Footer />
-      </Container>
+      <footer>
+        <Container>
+          {" "}
+          <Footer />
+        </Container>{" "}
+      </footer>
     </>
   );
 }
