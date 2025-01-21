@@ -9,6 +9,7 @@ import jobSlice from "./jobSlice";
 import homeSlice from "./homeSlice";
 import notificationsSlice from "./notificationsSlice";
 import currentnotifsSlice from "./currentnotifsSlice";
+import gameSlice from "./gameSlice";
 //...............................
 
 // Store Configure............
@@ -29,7 +30,10 @@ const store = configureStore({reducer:{
   shoppingbagSlice: shoppingbagSlice.reducer,
   
   jobSlice: jobSlice.reducer,
+
   notificationsSlice: notificationsSlice.reducer,
+
+  gameSlice: gameSlice.reducer,
 
 
 

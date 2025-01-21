@@ -1,6 +1,20 @@
 import styles from "../styles/FFgame.module.css";
 
-const FFgame = ({ inputValue, buttonValue, onButtonClick }) => {
+const FFgame = ({ inputValue, onButtonClick }) => {
+  const buttonValue = [
+    "7",
+    "8",
+    "9",
+    "4",
+    "5",
+    "6",
+    "1",
+    "2",
+    "3",
+    "Clear",
+    "0",
+    "Done",
+  ];
   return (
     <div className="col-md-6">
       <div className={styles.ffGame}>

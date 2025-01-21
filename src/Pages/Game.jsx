@@ -1,40 +1,25 @@
-import React from "react";
-import { useState } from "react";
 // Core Module.........
-import Cantener from "../Container/Container";
-
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 // Local Module.......
-import styles from "../styles/Game.module.css";
+import Cantener from "../Container/Container";
 import FFgame from "../Components/FFgame";
 import FFstatus from "../Components/FFstatus";
-//
+import { gameActions } from "../Store/gameSlice";
+
 // Function...........
 export default function Game() {
-  const [value, setValue] = useState("45");
-  const buttonName = [
-    "9",
-    "8",
-    "7",
-    "6",
-    "5",
-    "4",
-    "3",
-    "2",
-    "1",
-    "Clear",
-    "0",
-    "Done",
-  ];
-  const onButtonClick = (event) => console.log(event);
+  const dispatch = useDispatch();
+  const value = useSelector((state) => state.gameSlice);
+
+  const onButtonClick = (event) => {
+    dispatch(gameActions.addItems(event));
+  };
   return (
     <Cantener>
       <div className="row">
         {" "}
-        <FFgame
-          inputValue={value}
-          buttonValue={buttonName}
-          onButtonClick={onButtonClick}
-        />
+        <FFgame inputValue={value} onButtonClick={onButtonClick} />
         <FFstatus />
       </div>
     </Cantener>

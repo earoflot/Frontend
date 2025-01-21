@@ -7,6 +7,7 @@ import { notificationsActions } from "../Store/notificationsSlice";
 import { currentnotifsActions } from "../Store/currentnotifsSlice";
 import { fetchStatusActions } from "../Store/fetchStatus";
 import { homeActions } from "../Store/homeSlice";
+import { gameActions } from "../Store/gameSlice";
 
 const FetchItems = () => {
   const fetchStatus = useSelector((store) => store.fetchStatus);
@@ -29,6 +30,9 @@ const FetchItems = () => {
       axios.get("/user/api/home").then((respones) => {
         dispatch(homeActions.addItems(respones.data));
       });
+      // axios.get("/user/api/game").then((respones) => {
+      //   dispatch(gameActions.addItems(respones.data));
+      // });
 
       dispatch(fetchStatusActions.markFetchDone());
       dispatch(fetchStatusActions.markFetchingFinished());
