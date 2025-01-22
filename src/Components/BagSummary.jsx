@@ -1,5 +1,7 @@
 import { useSelector } from "react-redux";
 import styles from "../styles/BagSummary.module.css";
+import { useDispatch } from "react-redux";
+import { walletActions } from "../Store/walletSlice";
 
 const BagSummary = () => {
   const bagItems = useSelector((state) => state.shoppingbagSlice);
@@ -47,7 +49,10 @@ const BagSummary = () => {
           <span className={styles.priceitemValue}>₹{finalPayment}</span>
         </div>
       </div>
-      <button className={styles.btnplaceOrder}>
+      <button
+        className={styles.btnplaceOrder}
+        onClick={() => console.log("button click")}
+      >
         <div className="css-xjhrni">PLACE ORDER</div>
       </button>
     </div>

@@ -10,7 +10,7 @@ const walletSlice = createSlice({
       
     },
     removeFromWallet: (state, action) => {
-      
+      return action.payload
     },
   }
 });
