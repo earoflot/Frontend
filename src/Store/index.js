@@ -9,8 +9,13 @@ import jobSlice from "./jobSlice";
 import homeSlice from "./homeSlice";
 import notificationsSlice from "./notificationsSlice";
 import currentnotifsSlice from "./currentnotifsSlice";
-import gameSlice from "./gameSlice";
-import gamesummarySlice from "./gamesummarySlice";
+
+// Import FF game local module import ...............
+import ffgameSlice from "./ffgameSlice";
+import ffsummarySlice from "./ffsummarySlice";
+import ffamountSlice from "./ffamountSlice";
+import walletSlice from "./walletSlice";
+
 //...............................
 
 // Store Configure............
@@ -30,12 +35,18 @@ const store = configureStore({reducer:{
   
   shoppingbagSlice: shoppingbagSlice.reducer,
   
+  walletSlice : walletSlice.reducer,
+
+  
   jobSlice: jobSlice.reducer,
 
   notificationsSlice: notificationsSlice.reducer,
 
-  gameSlice: gameSlice.reducer,
-  gamesummarySlice: gamesummarySlice.reducer,
+  ffgameSlice: ffgameSlice.reducer,
+  
+  ffsummarySlice: ffsummarySlice.reducer,
+  
+  ffamountSlice: ffamountSlice.reducer,
 
 
 

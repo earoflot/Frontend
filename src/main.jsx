@@ -13,7 +13,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./Routes/App.jsx";
 // Icon pages import......................................
 import ShoppingBag from "./Pages/ShoppingBag.jsx";
-import Wallet from "./Pages/Wallett.jsx";
+import Wallet from "./Pages/Wallet.jsx";
 import Settings from "./Pages/Settings.jsx";
 import Profile from "./Pages/Profile.jsx";
 

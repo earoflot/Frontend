@@ -7,7 +7,6 @@ import { notificationsActions } from "../Store/notificationsSlice";
 import { currentnotifsActions } from "../Store/currentnotifsSlice";
 import { fetchStatusActions } from "../Store/fetchStatus";
 import { homeActions } from "../Store/homeSlice";
-import { gameActions } from "../Store/gameSlice";
 
 const FetchItems = () => {
   const fetchStatus = useSelector((store) => store.fetchStatus);

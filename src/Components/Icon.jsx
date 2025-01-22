@@ -24,9 +24,11 @@ export function ShoppingbagIcon() {
 }
 // It is name export function......its export Wallet Icon
 export function WalletIcon() {
+  const wallet = useSelector((store) => store.walletSlice);
   return (
     <Nav.Link eventKey={6} as={Link} to={"/wallet"} className="ms-lg-4">
       <IoWalletSharp />
+      {wallet}
     </Nav.Link>
   );
 }

@@ -1,0 +1,15 @@
+.FFamountDiv{
+ 
+  border: 2px solid black;
+  margin-bottom: 10px;
+ 
+  display: block;
+}
+.ffamountBtn{
+  
+    width: 25%;
+    height: 45px;
+    margin: 3px;
+    display: block;
+    
+}

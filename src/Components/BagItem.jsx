@@ -1,11 +1,21 @@
+// Core module...............
+
+// External Module........
 import { useDispatch } from "react-redux";
+
+// React-Icon External Module........
 import { RiDeleteBin5Fill } from "react-icons/ri";
+// Local Module..........
+
+// Store Local Module.............
 import { shoppingbagActions } from "../Store/shoppingbagSlice";
+// Styles Local Module..........
+
 import styles from "../styles/BagItem.module.css";
 
 const BagItem = ({ item }) => {
+  // add the some value of store
   const dispatch = useDispatch();
-
   const handleRemoveItem = () => {
     dispatch(shoppingbagActions.removeFromBag(item.id));
   };
