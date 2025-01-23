@@ -1,0 +1,54 @@
+/* sm.......SM MOBAIL...LENDSCAP MODE ................*
+
+@media (min-width : 576px) and (max-width : 767px){
+  
+}
+
+/* md.........Google Brosers Desktop site..............*
+@media (min-width : 768px) and (max-width : 991px){
+  
+}
+*/
+
+/* lg...................*/
+@media (min-width : 992px) and (max-width : 11999px){
+  .shoppingBag{
+    
+    align-items: end;
+    position: fixed;
+    right:  0;
+    margin-right: 40%;
+    
+    
+  }
+  .wallteBag{
+    
+    align-items: end;
+    position: fixed;
+    right:  0;
+    margin-right: 35%;
+    
+  }
+  .settIngs{
+    
+    align-items: end;
+    position: fixed;
+    right:  0;
+    margin-right: 30%;
+    
+  }
+  .proFile{
+    
+    align-items: end;
+    position: fixed;
+    right:  0;
+    margin-right: 25%;
+    
+  }
+}
+
+
+/* xl................*
+@media (min-width : 1200px) and (max-width : 1399px){
+ 
+}*/

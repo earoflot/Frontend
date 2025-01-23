@@ -138,8 +138,24 @@ a.action_container:link {
 /* it is bagsummary components css*/
 
 
-
-
+@media (min-width : 786px) and (max-width : 99999px){
+  .sms-lg-5{
+    
+    align-items: end;
+    position: fixed;
+    right:  0;
+    margin-right: 100px;
+    
+  }
+  .ms-lg-4{
+    
+    align-items: end;
+    position: fixed;
+    right:  0;
+    margin-right: 200px;
+    padding: 110px;
+  }
+}
 
 
 
