@@ -5,42 +5,57 @@ import styles from "../styles/ServiceDropdown.module.css";
 
 const ServiceDropdown = () => {
   return (
-    <NavDropdown
-      className={styles.navDropdown}
-      title="SERVICES"
-      id="collapsible-nav-dropdown "
-    >
-      <NavDropdown.Item className={styles.navItems}>
-        <Nav.Link
-          className={styles.navLinks}
-          eventKey={11}
-          as={Link}
-          to={"/shop"}
-        >
-          SHOP
-        </Nav.Link>
-        <Nav.Link eventKey={11} as={Link} to={"/game"}>
-          GAME
-        </Nav.Link>
-        <Nav.Link eventKey={11} as={Link} to={"/job"}>
-          JOB
-        </Nav.Link>
-        <Nav.Link eventKey={11} as={Link} to={"/education"}>
-          EDUCATION
-        </Nav.Link>
-        <Nav.Link eventKey={5} as={Link} to={"/exam"}>
-          EXAMS
-        </Nav.Link>
-      </NavDropdown.Item>
+    <li className="nav-item dropdown">
+      <a
+        className="nav-link dropdown-toggle"
+        role="button"
+        data-bs-toggle="dropdown"
+        id="collapsible-nav-dropdown "
+      >
+        SERVICES
+      </a>
+      <ul className="dropdown-menu">
+        <li>
+          <Link to="/shop" className="dropdown-item">
+            SHOP
+          </Link>
+        </li>
 
-      <NavDropdown.Divider className={styles.navDivider} />
-      <NavDropdown.Item className={styles.socalLink} href="#action/3.4">
-        https://youtube.com
-      </NavDropdown.Item>
-      <NavDropdown.Item className={styles.socalLink} href="#action/3.4">
-        https://facebook.com
-      </NavDropdown.Item>
-    </NavDropdown>
+        <li>
+          <Link to="/game" className="dropdown-item">
+            GAME
+          </Link>
+        </li>
+        <li>
+          <Link to="/job" className="dropdown-item">
+            JOB
+          </Link>
+        </li>
+        <li>
+          <Link to="/education" className="dropdown-item">
+            EDUCATION
+          </Link>
+        </li>
+        <li>
+          <Link to="/exam" className="dropdown-item">
+            EXAMS
+          </Link>
+        </li>
+        <li>
+          <hr className="dropdown-divider" />
+        </li>
+        <li>
+          <Link className="dropdown-item" to="#">
+            https://youtube.com
+          </Link>
+        </li>
+        <li>
+          <Link className="dropdown-item" to="#">
+            https://facebook.com
+          </Link>
+        </li>
+      </ul>
+    </li>
   );
 };
 export default ServiceDropdown;
