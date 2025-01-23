@@ -16,6 +16,8 @@ import { WalletIcon } from "./Icon";
 import { SettingIcon } from "./Icon";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/NavigationDrawer.css";
+import { Link } from "react-router-dom";
+import styles from "../styles/NavigationDrawer.module.css";
 // Navigation Functions...............
 function NavigationDrawer() {
   return (
@@ -23,7 +25,11 @@ function NavigationDrawer() {
       <div className="container">
         <div className="row">
           <Navbar collapseOnSelect expand="lg" className="col">
-            <Navbar.Brand className="me-lg-5"></Navbar.Brand>
+            <Navbar.Brand>
+              <Link to="/home" className={styles.brandName}>
+                manisQaure
+              </Link>
+            </Navbar.Brand>
             {/*import local icon module from icon.jsx*/}
 
             <ShoppingbagIcon className="mt-lg-4 " />

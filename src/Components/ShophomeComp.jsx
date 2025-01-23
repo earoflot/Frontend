@@ -10,10 +10,12 @@ import styles from "../styles/ShophomeComp.module.css";
 const ShoppingItems = ({ item }) => {
   const dispatch = useDispatch();
   const bagItems = useSelector((store) => store.shoppingbagSlice);
+
   const elementFound = bagItems.indexOf(item.id) >= 0;
 
   const handleAddToBag = () => {
     dispatch(shoppingbagActions.addToBag(item.id));
+    console.log(item);
   };
 
   const handleRemove = () => {
