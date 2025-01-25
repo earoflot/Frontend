@@ -8,10 +8,10 @@ import { RiDeleteBin5Fill } from "react-icons/ri";
 // Local Module..........
 
 // Store Local Module.............
-import { shoppingbagActions } from "../Store/shoppingbagSlice";
+import { shoppingbagActions } from "../../Store/shoppingbagSlice";
 // Styles Local Module..........
 
-import styles from "../styles/BagItem.module.css";
+import styles from "./styles/BagItem.module.css";
 
 const BagItem = ({ item }) => {
   // add the some value of store

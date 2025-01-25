@@ -12,17 +12,19 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 // App Module Import.................
 import App from "./Routes/App.jsx";
 // Icon pages import......................................
-import ShoppingBag from "./Pages/ShoppingBag.jsx";
+import ShoppingBag from "./components/shopping/ShoppingBag.jsx";
 import Wallet from "./Pages/Wallet.jsx";
-import Settings from "./Pages/Settings.jsx";
+
+import Settings from "./components/settings/Settings.jsx";
+
 import Profile from "./Pages/Profile.jsx";
 
 // Navigation Drawer Link import.........................
-import Home from "./Pages/Home.jsx";
-import Notifications from "./Pages/Notifications.jsx";
-import Shopping from "./Pages/ShopHome.jsx";
+import Home from "./components/home/Home.jsx";
+import Notifications from "./components/update/Notifications.jsx";
+import Shopping from "./components/shopping/ShopHome.jsx";
 import Game from "./Pages/Game.jsx";
-import Job from "./Pages/Job.jsx";
+import Job from "./components/job/Job.jsx";
 import Education from "./Pages/Education.jsx";
 import Exam from "./Pages/Exam.jsx";
 

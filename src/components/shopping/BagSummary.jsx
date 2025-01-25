@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import styles from "../styles/BagSummary.module.css";
+import styles from "./styles/BagSummary.module.css";
 import { useDispatch } from "react-redux";
-import { walletActions } from "../Store/walletSlice";
+import { walletActions } from "../../Store/walletSlice";
 
 const BagSummary = () => {
   return (

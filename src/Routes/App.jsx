@@ -6,11 +6,11 @@ import "../styles/App.css";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 // Local Module..............
-import NavigationDrawer from "../Components/NavigationDrawer";
-import Footer from "../Components/Footer";
+import NavigationDrawer from "../components/NavigationDrawer";
+import Footer from "../components/Footer";
 import Container from "../Container/Container";
-import FetchItems from "../Components/Fetchitems";
-import LoadingSpinner from "../Components/LoadingSpinner";
+import FetchItems from "../components/Fetchitems";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 function App() {
   const fetchStatus = useSelector((store) => store.fetchStatus);

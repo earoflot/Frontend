@@ -1,10 +1,10 @@
 // External Module
 import { useSelector } from "react-redux";
 // Local Module
-import Container from "../Container/Container";
+import Container from "../../Container/Container";
 // Notification Components Initialise Module......set to the value or put in the condition appropriate to the start of an operation......
-import Old_notifications from "../Components/OldnotifsComp";
-import Current_notifications from "../Components/CurrentnotifsComp";
+import Old_notifications from "./OldnotifsComp";
+import Current_notifications from "./CurrentnotifsComp";
 // Name Import...........;
 
 export default function Notifications() {

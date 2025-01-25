@@ -4,9 +4,9 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 // Local Module.......
 import Cantener from "../Container/Container";
-import FFgame from "../Components/FFgame";
-import FFsummary from "../Components/FFsummary";
-import FFamount from "../Components/FFamount";
+import FFgame from "../components/FFgame";
+import FFsummary from "../components/FFsummary";
+import FFamount from "../components/FFamount";
 // import store actions local module...........
 import { ffgameActions } from "../Store/ffgameSlice";
 import { ffamountActions } from "../Store/ffamountSlice";

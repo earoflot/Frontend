@@ -1,5 +1,5 @@
-import Container from "../Container/Container";
-import "../styles/Setting.css";
+import Container from "../../Container/Container";
+import "./styles/Setting.css";
 
 const Settings = () => {
   return (

@@ -4,9 +4,9 @@
 import { useSelector } from "react-redux";
 
 // Local Module.............
-import Container from "../Container/Container";
+import Container from "../../Container/Container";
 
-import JobItemComp from "../Components/JobItemComp";
+import JobItemComp from "./JobItemComp";
 
 const Job = () => {
   const items = useSelector((store) => store.jobSlice);

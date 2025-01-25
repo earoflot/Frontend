@@ -1,4 +1,4 @@
-import styles from "../styles/JobItemComp.module.css";
+import styles from "./styles/JobItemComp.module.css";
 
 function PostComp({ item }) {
   return (

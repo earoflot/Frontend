@@ -1,11 +1,11 @@
 // External Module..........
-import { shoppingbagActions } from "../Store/shoppingbagSlice";
+import { shoppingbagActions } from "../../Store/shoppingbagSlice";
 import { useDispatch, useSelector } from "react-redux";
 // Icon import from React-Icon............
 import { GrAddCircle } from "react-icons/gr";
 import { AiFillDelete } from "react-icons/ai";
 // CSS MODULE...........
-import styles from "../styles/ShophomeComp.module.css";
+import styles from "./styles/ShophomeComp.module.css";
 
 const ShoppingItems = ({ item }) => {
   const dispatch = useDispatch();

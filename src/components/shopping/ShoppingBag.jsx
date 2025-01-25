@@ -1,9 +1,9 @@
 // External Module..........
 import { useSelector } from "react-redux";
 // Local Module..................
-import Container from "../Container/Container";
-import BagItem from "../Components/BagItem";
-import BagSummary from "../Components/BagSummary";
+import Container from "../../Container/Container";
+import BagItem from "./BagItem";
+import BagSummary from "./BagSummary";
 
 const ShoppingBag = () => {
   const items = useSelector((state) => state.shoppinghomeSlice);
