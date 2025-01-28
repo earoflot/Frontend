@@ -1,14 +1,14 @@
 // External Module
 import {configureStore} from "@reduxjs/toolkit"
 // Local Module
-import modalSlice from "./modalSlice"
-import shoppinghomeSlice from "./shoppinghomeSlice";
-import fetchStatus from "./fetchStatus";
-import shoppingbagSlice from "./shoppingbagSlice";
-import jobSlice from "./jobSlice";
-import homeSlice from "./homeSlice";
-import notificationsSlice from "./notificationsSlice";
-import currentnotifsSlice from "./currentnotifsSlice";
+import modalSlice from "./model/modalSlice"
+import shoppinghomeSlice from "./shopping/shoppinghomeSlice";
+import fetchStatus from "./it/fetchStatus";
+import shoppingbagSlice from "./shopping/shoppingbagSlice";
+import jobSlice from "./job/jobSlice";
+import homeSlice from "./home/homeSlice";
+import notificationsSlice from "./update/notificationsSlice";
+import currentnotifsSlice from "./update/currentnotifsSlice";
 
 // Import FF game local module import ...............
 import ffgameSlice from "./ffgameSlice";

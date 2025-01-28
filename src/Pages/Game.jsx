@@ -8,8 +8,8 @@ import FFgame from "../components/FFgame";
 import FFsummary from "../components/FFsummary";
 import FFamount from "../components/FFamount";
 // import store actions local module...........
-import { ffgameActions } from "../Store/ffgameSlice";
-import { ffamountActions } from "../Store/ffamountSlice";
+import { ffgameActions } from "../store/ffgameSlice";
+import { ffamountActions } from "../store/ffamountSlice";
 
 // Function...........
 export default function Game() {

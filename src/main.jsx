@@ -3,7 +3,7 @@ import React from "react";
 
 // External Module..........
 // Redux Strore Module Import ..................
-import Store from "./Store/index.js";
+import Store from "./store/index.js";
 import { Provider } from "react-redux";
 // React-Router-Dom Module Import...............
 import ReactDOM from "react-dom/client";
@@ -22,6 +22,7 @@ import Profile from "./Pages/Profile.jsx";
 // Navigation Drawer Link import.........................
 import Home from "./components/home/Home.jsx";
 import Notifications from "./components/update/Notifications.jsx";
+
 import Shopping from "./components/shopping/ShopHome.jsx";
 import Game from "./Pages/Game.jsx";
 import Job from "./components/job/Job.jsx";

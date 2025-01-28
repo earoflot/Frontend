@@ -10,10 +10,14 @@ import Navbar from "react-bootstrap/Navbar";
 // Import Local Default Module From NavLink.jsx
 import NavLink from "./NavLink";
 // Import Local Name Module From Icon.jsx
-import { AccountIcon } from "./Icon";
-import { ShoppingbagIcon } from "./Icon";
-import { WalletIcon } from "./Icon";
-import { SettingIcon } from "./Icon";
+
+import {
+  WalletIcon,
+  AccountIcon,
+  ShoppingbagIcon,
+  SettingIcon,
+} from "../components/icon/Icon";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/NavigationDrawer.css";
 import { Link } from "react-router-dom";

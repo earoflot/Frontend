@@ -1,5 +1,5 @@
 // External Module..........
-import { shoppingbagActions } from "../../Store/shoppingbagSlice";
+import { shoppingbagActions } from "../../store/shopping/shoppingbagSlice";
 import { useDispatch, useSelector } from "react-redux";
 // Icon import from React-Icon............
 import { GrAddCircle } from "react-icons/gr";

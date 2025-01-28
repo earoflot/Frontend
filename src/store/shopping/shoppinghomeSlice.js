@@ -13,6 +13,7 @@ const shoppinghomeSlice = createSlice({
     }
   }
 })
+
 // create a shopping home actions payload..................
 export const shoppinghomeActions = shoppinghomeSlice.actions;
 // export default shopping home slice module...........

@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
-import { shoppinghomeActions } from "../Store/shoppinghomeSlice";
-import { jobActions } from "../Store/jobSlice";
-import { notificationsActions } from "../Store/notificationsSlice";
-import { currentnotifsActions } from "../Store/currentnotifsSlice";
-import { fetchStatusActions } from "../Store/fetchStatus";
-import { homeActions } from "../Store/homeSlice";
+import { shoppinghomeActions } from "../../store/shopping/shoppinghomeSlice";
+import { jobActions } from "../../store/job/jobSlice";
+import { notificationsActions } from "../../store/update/notificationsSlice";
+import { currentnotifsActions } from "../../store/update/currentnotifsSlice";
+import { fetchStatusActions } from "../../store/it/fetchStatus";
+import { homeActions } from "../../store/home/homeSlice";
 
 const FetchItems = () => {
   const fetchStatus = useSelector((store) => store.fetchStatus);

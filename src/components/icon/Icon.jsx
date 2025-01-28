@@ -8,7 +8,7 @@ import { IoPersonAddSharp } from "react-icons/io5";
 import { IoBagCheckSharp } from "react-icons/io5";
 import { IoWalletSharp } from "react-icons/io5";
 import { IoSettingsSharp } from "react-icons/io5";
-import styles from "../styles/Icon.module.css";
+import styles from "./styles/Icon.module.css";
 
 import { useSelector } from "react-redux";
 // It is name export function......its export ShoppingBag Icon
