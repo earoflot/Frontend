@@ -1,5 +1,5 @@
 // Style Module...OR CSS.......
-import "../styles/NavigationDrawer.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 // External Module......
 // IMPORT External Module From React-Bootstrap
@@ -16,12 +16,12 @@ import {
   AccountIcon,
   ShoppingbagIcon,
   SettingIcon,
-} from "../components/icon/Icon";
+} from "../icon/Icon";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/NavigationDrawer.css";
+import "./styles/NavigationDrawer.css";
 import { Link } from "react-router-dom";
-import styles from "../styles/NavigationDrawer.module.css";
+import styles from "./styles/NavigationDrawer.module.css";
 // Navigation Functions...............
 function NavigationDrawer() {
   return (

@@ -6,8 +6,8 @@ import "../styles/App.css";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 // Local Module..............
-import NavigationDrawer from "../components/NavigationDrawer";
-import Footer from "../components/Footer";
+import NavigationDrawer from "../components/layout/NavigationDrawer";
+import Footer from "../components/layout/Footer";
 import Container from "../Container/Container";
 import FetchItems from "../components/it/Fetchitems";
 import LoadingSpinner from "../components/err/LoadingSpinner";

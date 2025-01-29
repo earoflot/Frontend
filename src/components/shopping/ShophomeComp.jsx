@@ -15,7 +15,6 @@ const ShoppingItems = ({ item }) => {
 
   const handleAddToBag = () => {
     dispatch(shoppingbagActions.addToBag(item.id));
-    console.log(item);
   };
 
   const handleRemove = () => {
