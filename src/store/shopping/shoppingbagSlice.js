@@ -12,6 +12,9 @@ const shoppingbagSlice = createSlice({
     removeFromBag: (state, action) => {
       return state.filter(itemId => itemId !== action.payload);
     },
+    toClear: (state,action) => {
+      return [];
+    }
   }
 });
 // export const shopping bag action payload...........

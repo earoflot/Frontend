@@ -1,6 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./styles/BagSummary.module.css";
 import { walletActions } from "../../store/walletSlice";
+import { shoppingbagActions } from "../../store/shopping/shoppingbagSlice";
+import { Link } from "react-router-dom";
 
 const BagSummary = () => {
   const bagItemIds = useSelector((state) => state.shoppingbagSlice);
@@ -28,6 +30,7 @@ const BagSummary = () => {
   const orderFunc = () => {
     if (totalItem >= 1) {
       dispatch(walletActions.orderTo(finalPayment));
+      dispatch(shoppingbagActions.toClear());
     }
   };
 
@@ -58,7 +61,9 @@ const BagSummary = () => {
         </div>
       </div>
       <button className={styles.btnplaceOrder} onClick={orderFunc}>
-        <div className="css-xjhrni">PLACE ORDER</div>
+        <Link to={"/home"} className={styles.btnLink}>
+          PLACE ORDER
+        </Link>
       </button>
     </div>
   );

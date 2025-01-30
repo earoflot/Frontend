@@ -45,7 +45,7 @@
 }
 .btnplaceOrder {
   width: 97.10%;
-  
+ 
   letter-spacing: 1px;
   font-size: 14px;
   font-weight: 600;
@@ -55,4 +55,9 @@
   background-color: rgb(255, 63, 108);
   color: rgb(255, 255, 255);
   cursor: pointer;
+}
+.btnLink{
+  text-decoration: none;
+  background-color: rgb(255, 63, 108);
+  color: rgb(255, 255, 255);
 }
