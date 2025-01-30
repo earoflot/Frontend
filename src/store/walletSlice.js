@@ -3,14 +3,18 @@ import {createSlice} from "@reduxjs/toolkit";
 // create a shopping bag slice on createSlice external module.............
 const walletSlice = createSlice({
   name: 'wallet',
-  initialState: ["3"],
+  initialState: [10000],
   // create a reducers on action ..........
   reducers: {
     addToWallet: (state, action) => {
-      
+     
     },
-    removeFromWallet: (state, action) => {
-      return action.payload
+    orderTo: (state, action) => {
+      if (state >=action.payload){
+        return state - action.payload;
+      }else{
+        return [0]
+      } 
     },
   }
 });

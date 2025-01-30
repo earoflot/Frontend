@@ -1,5 +1,6 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import styles from "./styles/BagSummary.module.css";
+import { walletActions } from "../../store/walletSlice";
 
 const BagSummary = () => {
   const bagItemIds = useSelector((state) => state.shoppingbagSlice);
@@ -20,6 +21,15 @@ const BagSummary = () => {
   });
 
   let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEES;
+  // Button function ............
+  const walletsAmout = useSelector((store) => store.walletSlice);
+  const dispatch = useDispatch();
+
+  const orderFunc = () => {
+    if (totalItem >= 1) {
+      dispatch(walletActions.orderTo(finalPayment));
+    }
+  };
 
   return (
     <div className={styles.bagSummary}>
@@ -47,7 +57,7 @@ const BagSummary = () => {
           <span className={styles.priceitemValue}>₹{finalPayment}</span>
         </div>
       </div>
-      <button className={styles.btnplaceOrder}>
+      <button className={styles.btnplaceOrder} onClick={orderFunc}>
         <div className="css-xjhrni">PLACE ORDER</div>
       </button>
     </div>
