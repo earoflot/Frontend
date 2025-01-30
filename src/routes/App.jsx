@@ -9,8 +9,8 @@ import { useSelector } from "react-redux";
 import NavigationDrawer from "../components/layout/NavigationDrawer";
 import Footer from "../components/layout/Footer";
 import Container from "../Container/Container";
-import FetchItems from "../components/it/Fetchitems";
-import LoadingSpinner from "../components/err/LoadingSpinner";
+import FetchItems from "../api/it/Fetchitems";
+import LoadingSpinner from "../api/err/LoadingSpinner";
 
 function App() {
   const fetchStatus = useSelector((store) => store.fetchStatus);
