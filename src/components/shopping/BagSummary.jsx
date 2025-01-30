@@ -23,12 +23,12 @@ const BagSummary = () => {
   });
 
   let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEES;
-  // Button function ............
+  // Order Button function ............
   const walletsAmout = useSelector((store) => store.walletSlice);
   const dispatch = useDispatch();
 
   const orderFunc = () => {
-    if (totalItem >= 1) {
+    if (totalItem > 0) {
       dispatch(walletActions.orderTo(finalPayment));
       dispatch(shoppingbagActions.toClear());
     }

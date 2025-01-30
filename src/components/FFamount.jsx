@@ -1,12 +1,25 @@
 import styles from "../styles/FFamount.module.css";
 
 const FFamount = ({ summaryValue }) => {
-  const amountValue = ["5", "10", "50", "100", "150", "200", "500", "1000"];
+  const amountValue = [
+    "5",
+    "10",
+    "50",
+    "100",
+    "150",
+    "200",
+    "500",
+    "1000",
+    "2000",
+  ];
   return (
     <div className="col-md-6">
       <div className={styles.FFamountDiv}>
-        {summaryValue}
-        {summaryValue.length === 0 && <h1> please enter your numbar</h1>}
+        <div>
+          {summaryValue}
+          {summaryValue.length === 0 && <h1> please enter your numbar</h1>}
+        </div>
+        <div>Amount</div>
         {amountValue.map((amout) => (
           <button key={amout} className={styles.ffamountBtn}>
             {amout}
