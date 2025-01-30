@@ -11,9 +11,11 @@ const walletSlice = createSlice({
     },
     orderTo: (state, action) => {
       if (state >=action.payload){
+        console.log(alert("You items is Oder"))
         return state - action.payload;
       }else{
-        return [0]
+        console.log(alert("Your coines is Low"))
+        return state;
       } 
     },
   }
