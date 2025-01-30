@@ -1,6 +1,7 @@
 // External Module............
 import {createSlice} from "@reduxjs/toolkit";
 // create a shopping bag slice on createSlice external module.............
+
 const walletSlice = createSlice({
   name: 'wallet',
   initialState: [10000],
@@ -11,7 +12,7 @@ const walletSlice = createSlice({
     },
     orderTo: (state, action) => {
       if (state >=action.payload){
-        console.log(alert("You items is Oder"))
+        console.log(alert('YOUR ITEMS IS ORDER \nTHENKYOU'))
         return state - action.payload;
       }else{
         console.log(alert("Your coines is Low"))
