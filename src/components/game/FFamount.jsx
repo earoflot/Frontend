@@ -1,6 +1,12 @@
+// External Module............
+// Get the data in store
+import { useSelector } from "react-redux";
+// Import styles module................
 import styles from "./styles/FFamount.module.css";
 
-const FFamount = ({ numValue, onAmountButton }) => {
+const FFamount = ({ onAmountButton }) => {
+  // find the ff number store and use the data.......
+  const number = useSelector((state) => state.ffnumberSlice);
   const amountValue = [
     "5",
     "10",
@@ -16,11 +22,7 @@ const FFamount = ({ numValue, onAmountButton }) => {
   return (
     <div className="col-md-6">
       <div className={styles.FFamountDiv}>
-        <div>
-          {" "}
-          {numValue}
-          {numValue <= 0 && <h1> please enter your numbar</h1>}
-        </div>
+        <input readOnly value={number} />
 
         {amountValue.map((amout) => (
           <button

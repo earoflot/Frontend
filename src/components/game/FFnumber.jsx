@@ -1,6 +1,19 @@
+// Core Module...........
+import { useState } from "react";
+// Import External Module...........
+import { useDispatch } from "react-redux";
+// Import Local Store Slice Module...........
+import { ffnumberActions } from "../../store/game/ffnumberSlice";
+// Styles Module...........
 import styles from "./styles/FFnumber.module.css";
 
-const FFnumber = ({ inputValue, onButtonClick }) => {
+const FFnumber = () => {
+  // using the store actions dispatch..........
+  const dispatch = useDispatch();
+
+  // initialise the state........
+  let [numValue, setnumValue] = useState("Enter your number");
+
   const buttonValue = [
     "7",
     "8",
@@ -15,10 +28,23 @@ const FFnumber = ({ inputValue, onButtonClick }) => {
     "0",
     "Done",
   ];
+  // it is Number click function...............
+  const onButtonClick = (button) => {
+    // if condistion appy for state in store ffgame and ffamount...........
+    if (button === "Done") {
+      dispatch(ffnumberActions.doneItems(numValue));
+      setnumValue("Enter your number");
+    } else if (button === "Clear") {
+      setnumValue("Enter your number");
+    } else {
+      setnumValue(button);
+    }
+  };
+
   return (
     <div className="col-md-6">
       <div className={styles.ffNum}>
-        <input className={styles.ffInput} readOnly value={inputValue} />
+        <input className={styles.ffInput} readOnly value={numValue} />
         <div className={styles.ffBtndiv}>
           {buttonValue.map((button) => (
             <button

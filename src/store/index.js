@@ -11,9 +11,14 @@ import notificationsSlice from "./update/notificationsSlice";
 import currentnotifsSlice from "./update/currentnotifsSlice";
 
 // Import FF game local module import ...............
-import ffgameSlice from "./game/ffgameSlice";
+
 import walletSlice from "./walletSlice";
 
+
+// Import FF game module.........................
+import ffgameSlice from "./game/ffgameSlice";
+import ffnumberSlice from "./game/ffnumberSlice";
+import ffamountSlice from "./game/ffamountSlice";
 //...............................
 
 // Store Configure............
@@ -41,6 +46,9 @@ const store = configureStore({reducer:{
   notificationsSlice: notificationsSlice.reducer,
 
   ffgameSlice: ffgameSlice.reducer,
+  ffnumberSlice: ffnumberSlice.reducer,
+  ffamountSlice: ffamountSlice.reducer,
+
 
 }});
 

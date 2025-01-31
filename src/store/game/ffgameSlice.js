@@ -17,4 +17,4 @@ const gameSlice = createSlice({
 })
 
 export const ffgameActions = gameSlice.actions;
-export default gameSlice;
+export default gameSlice ;

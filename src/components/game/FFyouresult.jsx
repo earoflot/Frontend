@@ -1,4 +1,4 @@
-const FFyouresult = () => {
+const FFyouresult = ({ youResult }) => {
   const timeValue = [
     "10:30",
     "12:00",
@@ -10,6 +10,9 @@ const FFyouresult = () => {
     "09:00",
   ];
   const dateValue = ["01.01.2000"];
+  const numValue = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+  console.log(youResult);
   return (
     <>
       <div>
@@ -18,10 +21,17 @@ const FFyouresult = () => {
         </ul>
       </div>
       <div>
-        <ul class="list-group list-group-horizontal">
+        <ul className="list-group list-group-horizontal">
           {timeValue.map((item) => (
-            <li class="list-group-item">{item}</li>
+            <li className="list-group-item" key={item}>
+              {item}
+            </li>
           ))}
+        </ul>
+      </div>
+      <div>
+        <ul className="list-group list-group-vertical">
+          <li className="list-group-item">{youResult}</li>
         </ul>
       </div>
     </>

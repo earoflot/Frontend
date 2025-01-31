@@ -15,20 +15,24 @@ const FFgame = () => {
   // it is state use for only components use and get the data
   const [getNumber, setNumber] = useState();
   const [getAmount, setAmount] = useState();
-  // it is Number click function...............
-  const onButtonClick = (button) => {
-    // if condistion appy for state in store ffgame and ffamount...........
-    if (button === "Clear") {
-      dispatch(ffgameActions.clearItems(button));
-    } else if (button === "Done") {
-      setNumber(ffNumber);
-    } else {
-      dispatch(ffgameActions.addItems(button));
-    }
-  };
+  const [getYouresult, setYouresult] = useState();
+  // // it is Number click function...............
+  // const onButtonClick = (button) => {
+  //   // if condistion appy for state in store ffgame and ffamount...........
+  //   if (button === "Clear") {
+  //     setNumber([]);
+  //     dispatch(ffgameActions.clearItems(button));
+  //   } else if (button === "Done") {
+  //     setNumber(ffNumber);
+  //   } else {
+  //     dispatch(ffgameActions.addItems(button));
+  //   }
+  // };
   // it is FF Game Amount click function.................
   const onAmountButton = (amout) => {
     if (amout === "Submit") {
+      setYouresult(ffNumber);
+      console.log("submit");
     } else {
       setAmount(amout);
     }
@@ -36,10 +40,10 @@ const FFgame = () => {
 
   return (
     <>
-      <FFnumber inputValue={ffNumber} onButtonClick={onButtonClick} />
+      <FFnumber />
 
       <FFamount numValue={getNumber} onAmountButton={onAmountButton} />
-      <FFyouresult />
+      <FFyouresult youResult={getYouresult} />
     </>
   );
 };
