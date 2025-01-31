@@ -1,6 +1,6 @@
-import styles from "../styles/FFgame.module.css";
+import styles from "./styles/FFnumber.module.css";
 
-const FFgame = ({ inputValue, onButtonClick }) => {
+const FFnumber = ({ inputValue, onButtonClick }) => {
   const buttonValue = [
     "7",
     "8",
@@ -17,7 +17,7 @@ const FFgame = ({ inputValue, onButtonClick }) => {
   ];
   return (
     <div className="col-md-6">
-      <div className={styles.ffGame}>
+      <div className={styles.ffNum}>
         <input className={styles.ffInput} readOnly value={inputValue} />
         <div className={styles.ffBtndiv}>
           {buttonValue.map((button) => (
@@ -34,4 +34,5 @@ const FFgame = ({ inputValue, onButtonClick }) => {
     </div>
   );
 };
-export default FFgame;
+
+export default FFnumber;

@@ -7,12 +7,12 @@ const gameSlice = createSlice({
   initialState: [],
   reducers : {
     addItems : (state,action) =>{
+      
      return action.payload;
     },
     clearItems : (state,action) =>{
       return []
-    }
-   
+    },
   }
 })
 

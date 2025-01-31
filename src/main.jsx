@@ -24,7 +24,7 @@ import Home from "./components/home/Home.jsx";
 import Notifications from "./components/update/Notifications.jsx";
 
 import Shopping from "./components/shopping/ShopHome.jsx";
-import Game from "./Pages/Game.jsx";
+import Game from "./components/game/Game.jsx";
 import Job from "./components/job/Job.jsx";
 import Education from "./Pages/Education.jsx";
 import Exam from "./Pages/Exam.jsx";
