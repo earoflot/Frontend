@@ -1,4 +1,4 @@
-.ffStatus{
+/* .ffStatus{
  
   border: 2px solid black;
   margin-bottom: 10px;
@@ -12,4 +12,10 @@
     margin: 3px;
     display: block;
     
+} */
+
+
+.resultMain{
+  border: 1px solid black;
+  width: 100%;
 }

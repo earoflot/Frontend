@@ -158,20 +158,27 @@ a.action_container:link {
 }
 
 /*FF GAME BUTTON CSS*/
-.btn-secondary{
-  width: 95px;
-  height: 45px;
-  margin: 8px;
-  
-}
-.btn-primary{
+
+.btn-outline-info{
   width: 80px;
   height: 45px;
   margin: 2px;
+  font-weight: 700;
 
 }
 
-
+.btn-outline-success{
+  width: 80px;
+  height: 45px;
+  margin: 2px;
+  font-weight: 700;
+}
+.btn-outline-danger{
+  width: 80px;
+  height: 45px;
+  margin: 2px;
+  font-weight: 700;
+}
 
 
 

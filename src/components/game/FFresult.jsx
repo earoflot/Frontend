@@ -1,5 +1,7 @@
 import Table from "react-bootstrap/Table";
 import "bootstrap/dist/css/bootstrap.min.css";
+import styles from "./styles/FFresult.module.css";
+
 function Result() {
   const time = [
     "10:30",
@@ -14,7 +16,7 @@ function Result() {
   const numValue = ["0", "1", "2", "3", "4", "5", "6", "7"];
   const dilNum = ["1", "2", "3"];
   return (
-    <div>
+    <div className={styles.resultMain}>
       <Table responsive="sm">
         <thead>
           <tr>

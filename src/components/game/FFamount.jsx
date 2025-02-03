@@ -19,7 +19,7 @@ const FFamount = () => {
   // create a state of amount value........
 
   const [getAmount, setAmount] = useState(" ");
-  const amountValue = ["10", "50", "100", "150", "200", "500", "1000", "2000"];
+  const amountValue = ["10", "50", "100", "200", "500", "1000", "2000"];
   // Amount value button initialise.......
   const onAmountButton = (amount) => {
     if (amount === "Submit") {
@@ -36,17 +36,7 @@ const FFamount = () => {
       <div className={styles.amountInput}>
         <div className="input-group ">
           <div className="input-group mb-1">
-            <span className="input-group-text">N</span>
-
-            <input
-              type="text"
-              className="form-control"
-              aria-label="Dollar amount (with dot and two decimal places)"
-              readOnly
-            />
-          </div>
-          <div className="input-group mb-1">
-            <span className="input-group-text">A</span>
+            <span className="input-group-text">$</span>
 
             <input
               type="text"
@@ -61,7 +51,7 @@ const FFamount = () => {
         {amountValue.map((amount) => (
           <button
             key={amount}
-            className="btn btn-primary"
+            className="btn btn-outline-info"
             onClick={() => onAmountButton(amount)}
           >
             {amount}
@@ -70,16 +60,12 @@ const FFamount = () => {
       </div>
       <div className={styles.amountSubmit}>
         {" "}
-        {elementFound ? (
-          <button type="button" className="btn btn-add-bag btn-success">
-            <GrAddCircle />
-            Done
-          </button>
-        ) : (
-          <button type="button" className={`btn btn-add-bag btn-danger`}>
-            <AiFillDelete /> Remove
-          </button>
-        )}
+        <button type="button" className="btn btn-outline-success">
+          Add to
+        </button>
+        <button type="button" className={`btn btn-outline-danger`}>
+          Clear
+        </button>
       </div>
     </div>
   );

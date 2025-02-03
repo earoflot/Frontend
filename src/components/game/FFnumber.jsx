@@ -9,23 +9,23 @@ const FFnumber = ({ onButtonClick, numValue, clearButton, doneButton }) => {
   return (
     <div className={styles.mainDiv}>
       <div className={styles.inputDiv}>
-        <div className="input-group">
-          <span className="input-group-text">Your Number</span>
-          <textarea
-            className="form-control"
-            aria-label="With textarea"
+        <div className="input-group mb-1">
+          <input
             type="text"
+            className="form-control"
             readOnly
             value={numValue}
-          ></textarea>
+          />
+          <span className="input-group-text" id="basic-addon2">
+            Number
+          </span>
         </div>
       </div>
       <div className={styles.numDiv}>
-        {" "}
         {buttonValue.map((button) => (
           <button
             key={button}
-            className="btn btn-secondary"
+            className="btn btn-outline-info"
             onClick={() => onButtonClick(button)}
           >
             {button}
@@ -33,17 +33,12 @@ const FFnumber = ({ onButtonClick, numValue, clearButton, doneButton }) => {
         ))}
       </div>
       <div className={styles.submDiv}>
-        {" "}
-        {elementFound ? (
-          <button type="button" className="btn btn-add-bag btn-success">
-            <GrAddCircle />
-            Done
-          </button>
-        ) : (
-          <button type="button" className={`btn btn-add-bag btn-danger`}>
-            <AiFillDelete /> Remove
-          </button>
-        )}
+        <button type="button" className={`btn btn-outline-danger`}>
+          Clear
+        </button>
+        <button type="button" className="btn btn-outline-success">
+          Add to
+        </button>
       </div>
     </div>
   );
