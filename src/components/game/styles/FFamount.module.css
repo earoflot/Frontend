@@ -1,15 +1,28 @@
-.FFamountDiv{
- 
-  border: 2px solid black;
-  margin-bottom: 10px;
- 
-  display: block;
+/*Its THE  FF GAME AMOUNT CSS*/
+/* IT IS THE MAIN AMOUNT CALSS*/
+.mainAmoutdiv{
+  border: 1px solid black;
+  height: 80vh;
+  width: 100%;
+  padding: 4px;
 }
-.ffamountBtn{
-  
-    width: 25%;
-    height: 45px;
-    margin: 3px;
-    display: block;
-    
+/*iTS IS THE AMOUNT INPUT CLASS*/
+.amountInput{
+  border: 1px solid black;
+  height: 16%;
+}
+/* IT IS THE AMOUNT BUTTON CLASS*/
+.amountBtn{
+  border: 1px solid black;
+  height: 70%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* ITS THE AMOUNT SUBMIT CLASS*/
+.amountSubmit{
+  border: 1px solid black;
+  height: 10%;
+  margin-top: 8px;
 }

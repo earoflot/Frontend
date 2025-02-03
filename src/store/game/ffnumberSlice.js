@@ -5,14 +5,8 @@ const ffnumberSlice = createSlice({
   initialState: [],
   reducers : {
     doneItems : (state,action) => { 
-     if(action.payload === "Enter your number"){
-      return []
-     }else if (action.payload === "Thankyou"){
-      return []
-     }else{
+      console.log(action.payload);
       return action.payload;
-     }
-      
     },
     
   }

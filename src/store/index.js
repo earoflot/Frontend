@@ -19,6 +19,7 @@ import walletSlice from "./walletSlice";
 import ffgameSlice from "./game/ffgameSlice";
 import ffnumberSlice from "./game/ffnumberSlice";
 import ffamountSlice from "./game/ffamountSlice";
+import ffyouresultSlice from "./game/ffyouresultSlice";
 //...............................
 
 // Store Configure............
@@ -48,6 +49,7 @@ const store = configureStore({reducer:{
   ffgameSlice: ffgameSlice.reducer,
   ffnumberSlice: ffnumberSlice.reducer,
   ffamountSlice: ffamountSlice.reducer,
+  ffyouresultSlice: ffyouresultSlice.reducer,
 
 
 }});

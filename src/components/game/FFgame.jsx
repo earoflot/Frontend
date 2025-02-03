@@ -1,50 +1,44 @@
-// Import Local Modules.............
-import FFnumber from "./FFnumber";
-import FFamount from "./FFamount";
-import FFyouresult from "./FFyouresult";
-
+// Import External Module. configruasion..........
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 // import store actions local module...........
-import { ffgameActions } from "../../store/game/ffgameSlice";
+import { ffnumberActions } from "../../store/game/ffnumberSlice";
+// Import Local Modules.............
+import FFnumber from "./FFnumber";
+import Container from "../../Container/Container";
+import styles from "./styles/FFgame.module.css";
+import FFamount from "./FFamount";
 
 const FFgame = () => {
-  // useDispatch on react-redux store.............
   const dispatch = useDispatch();
-  const ffNumber = useSelector((state) => state.ffgameSlice);
-  // it is state use for only components use and get the data
-  const [getNumber, setNumber] = useState();
-  const [getAmount, setAmount] = useState();
-  const [getYouresult, setYouresult] = useState();
-  // // it is Number click function...............
-  // const onButtonClick = (button) => {
-  //   // if condistion appy for state in store ffgame and ffamount...........
-  //   if (button === "Clear") {
-  //     setNumber([]);
-  //     dispatch(ffgameActions.clearItems(button));
-  //   } else if (button === "Done") {
-  //     setNumber(ffNumber);
-  //   } else {
-  //     dispatch(ffgameActions.addItems(button));
-  //   }
-  // };
-  // it is FF Game Amount click function.................
-  const onAmountButton = (amout) => {
-    if (amout === "Submit") {
-      setYouresult(ffNumber);
-      console.log("submit");
-    } else {
-      setAmount(amout);
-    }
+  // Number value button function..........
+  let [getNumber, setNumber] = useState([]);
+  // it is Number click function...............
+  const onButtonClick = (button) => {
+    setNumber([button]);
+  };
+
+  const clearButton = () => {
+    setNumber([]);
+  };
+  const doneButton = () => {
+    dispatch(ffnumberActions.doneItems(getNumber));
   };
 
   return (
-    <>
-      <FFnumber />
-
-      <FFamount numValue={getNumber} onAmountButton={onAmountButton} />
-      <FFyouresult youResult={getYouresult} />
-    </>
+    <div className="row p-0 m-0">
+      <div className="col-8 p-0 m-0">
+        <FFnumber
+          onButtonClick={onButtonClick}
+          numValue={getNumber}
+          clearButton={clearButton}
+          doneButton={doneButton}
+        />
+      </div>
+      <div className="col-4 p-0 m-0">
+        <FFamount />
+      </div>
+    </div>
   );
 };
 

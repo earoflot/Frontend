@@ -157,9 +157,19 @@ a.action_container:link {
   }
 }
 
+/*FF GAME BUTTON CSS*/
+.btn-secondary{
+  width: 95px;
+  height: 45px;
+  margin: 8px;
+  
+}
+.btn-primary{
+  width: 80px;
+  height: 45px;
+  margin: 2px;
 
-
-
+}
 
 
 

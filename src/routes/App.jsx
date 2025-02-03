@@ -28,10 +28,7 @@ function App() {
       </main>
 
       <footer>
-        <Container>
-          {" "}
-          <Footer />
-        </Container>{" "}
+        <Container> </Container>{" "}
       </footer>
     </>
   );

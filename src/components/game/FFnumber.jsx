@@ -1,61 +1,49 @@
-// Core Module...........
-import { useState } from "react";
-// Import External Module...........
-import { useDispatch } from "react-redux";
-// Import Local Store Slice Module...........
-import { ffnumberActions } from "../../store/game/ffnumberSlice";
 // Styles Module...........
 import styles from "./styles/FFnumber.module.css";
-
-const FFnumber = () => {
-  // using the store actions dispatch..........
-  const dispatch = useDispatch();
-
-  // initialise the state........
-  let [numValue, setnumValue] = useState("Enter your number");
-
-  const buttonValue = [
-    "7",
-    "8",
-    "9",
-    "4",
-    "5",
-    "6",
-    "1",
-    "2",
-    "3",
-    "Clear",
-    "0",
-    "Done",
-  ];
-  // it is Number click function...............
-  const onButtonClick = (button) => {
-    // if condistion appy for state in store ffgame and ffamount...........
-    if (button === "Done") {
-      dispatch(ffnumberActions.doneItems(numValue));
-      setnumValue("Enter your number");
-    } else if (button === "Clear") {
-      setnumValue("Enter your number");
-    } else {
-      setnumValue(button);
-    }
-  };
-
+// Icon import from React-Icon............
+import { GrAddCircle } from "react-icons/gr";
+import { AiFillDelete } from "react-icons/ai";
+const FFnumber = ({ onButtonClick, numValue, clearButton, doneButton }) => {
+  const buttonValue = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
+  const elementFound = true;
   return (
-    <div className="col-md-6">
-      <div className={styles.ffNum}>
-        <input className={styles.ffInput} readOnly value={numValue} />
-        <div className={styles.ffBtndiv}>
-          {buttonValue.map((button) => (
-            <button
-              key={button}
-              className={styles.ffBtn}
-              onClick={() => onButtonClick(button)}
-            >
-              {button}
-            </button>
-          ))}
+    <div className={styles.mainDiv}>
+      <div className={styles.inputDiv}>
+        <div className="input-group">
+          <span className="input-group-text">Your Number</span>
+          <textarea
+            className="form-control"
+            aria-label="With textarea"
+            type="text"
+            readOnly
+            value={numValue}
+          ></textarea>
         </div>
+      </div>
+      <div className={styles.numDiv}>
+        {" "}
+        {buttonValue.map((button) => (
+          <button
+            key={button}
+            className="btn btn-secondary"
+            onClick={() => onButtonClick(button)}
+          >
+            {button}
+          </button>
+        ))}
+      </div>
+      <div className={styles.submDiv}>
+        {" "}
+        {elementFound ? (
+          <button type="button" className="btn btn-add-bag btn-success">
+            <GrAddCircle />
+            Done
+          </button>
+        ) : (
+          <button type="button" className={`btn btn-add-bag btn-danger`}>
+            <AiFillDelete /> Remove
+          </button>
+        )}
       </div>
     </div>
   );
