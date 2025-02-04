@@ -15,10 +15,8 @@ const FFnumber = ({ onButtonClick, numValue, clearButton, doneButton }) => {
             className="form-control"
             readOnly
             value={numValue}
+            placeholder="Number"
           />
-          <span className="input-group-text" id="basic-addon2">
-            Number
-          </span>
         </div>
       </div>
       <div className={styles.numDiv}>

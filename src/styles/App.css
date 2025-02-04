@@ -162,7 +162,7 @@ a.action_container:link {
 .btn-outline-info{
   width: 80px;
   height: 45px;
-  margin: 2px;
+  margin: 8px;
   font-weight: 700;
 
 }
@@ -170,19 +170,25 @@ a.action_container:link {
 .btn-outline-success{
   width: 80px;
   height: 45px;
-  margin: 2px;
+  margin: 8px;
   font-weight: 700;
 }
 .btn-outline-danger{
   width: 80px;
   height: 45px;
-  margin: 2px;
+  margin: 8px;
   font-weight: 700;
 }
+/* FF GAME NUMBER AND AMOUNT INPUT BOX CSS*/
 
 
-
-
-
-
+.form-control{
+  color: red;
+  font-weight: 900;
+  text-align: center;
+  height: 58px;
+  border: 1px solid #EE1D51;
+  font-size: x-large;
   
+
+}

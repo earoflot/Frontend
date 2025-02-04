@@ -36,9 +36,12 @@
 /* FF GAME NUMBER DIV CLASSS STYLES..........*/
   /* It is parent class */
 .mainDiv{
-  /* border: 1px solid black; */
+  
 
   width: 100%;
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -46,17 +49,30 @@
  /* It is children class.......*/
 .inputDiv{
   /* border: 1px solid black; */
+  /* TOP | RIGHT | BOTTOM | LEFT*/
+
+  padding: 3px 24px 2px 24px;
 
 }
 /* ITS THE NUMBER OF BUTTON DIV*/
 .numDiv{
   /* border: 1px solid black; */
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: center;
 
- 
 }
 /* IT IS THE SUBMIT BUTTON DIV......... */
 .submDiv{
   /* border: 1px solid black; */
+  display: flex;
+ 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
 
-
+}
+.ffInfo{
+  
 }

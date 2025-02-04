@@ -34,17 +34,14 @@ const FFamount = () => {
   return (
     <div className={styles.mainAmoutdiv}>
       <div className={styles.amountInput}>
-        <div className="input-group ">
-          <div className="input-group mb-1">
-            <span className="input-group-text">$</span>
-
-            <input
-              type="text"
-              className="form-control"
-              aria-label="Dollar amount (with dot and two decimal places)"
-              readOnly
-            />
-          </div>
+        <div className="input-group mb-1">
+          <input
+            type="text"
+            className="form-control"
+            aria-label="Dollar amount (with dot and two decimal places)"
+            readOnly
+            placeholder="₹"
+          />
         </div>
       </div>
       <div className={styles.amountBtn}>
