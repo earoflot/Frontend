@@ -1,10 +1,17 @@
 .resultDiv{
 /* border: 1px solid black; */
+ 
   width: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
-.resultTable{
-  /* border: 1px solid black; */
-}
+
 .resultBtn{
-  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
 }
+

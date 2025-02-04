@@ -35,7 +35,7 @@ const FFnumber = ({ onButtonClick, numValue, clearButton, doneButton }) => {
           Clear
         </button>
         <button type="button" className="btn btn-outline-success">
-          Add to
+          Submit
         </button>
       </div>
     </div>

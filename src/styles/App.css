@@ -162,7 +162,7 @@ a.action_container:link {
 .btn-outline-info{
   width: 80px;
   height: 45px;
-  margin: 8px;
+  margin: 16px;
   font-weight: 700;
 
 }
@@ -191,4 +191,54 @@ a.action_container:link {
   font-size: x-large;
   
 
+}
+
+/* FF GAME YOUR RESULT CSS */
+/* FF GAME YOUR RESULT HEDLIN CSS*/
+.text-primary-emphasis {
+  font-size: large;
+  text-align: center;
+  font-weight: 500;
+} 
+.text-light{
+  font-size: large;
+  text-align: center;
+  font-weight: 800;
+}
+.text-dark {
+  font-size: large;
+  text-align: center;
+  font-weight: 700;
+}
+/* FF GAME YOUR RESULT BUTTON CSS*/
+.btn-danger{
+  background-color: white;
+  color: #dc3545;
+  margin-bottom: 8px;
+  width: 100px;
+  height: 45px;
+  font-weight: 700;
+ 
+}
+.btn-success{
+  background-color: white;
+  color: #198754;
+  margin-bottom: 8px;
+  width: 100px;
+  height: 45px;
+  font-weight: 700;
+ 
+}
+
+/* It is the Final Result css*/
+.text-danger{
+  background-color: white;
+  color: #dc3545;
+  margin-bottom: 8px;
+  width: 100px;
+  height: 45px;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid black;
+  
 }

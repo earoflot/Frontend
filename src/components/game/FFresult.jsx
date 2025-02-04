@@ -14,27 +14,28 @@ function Result() {
     "09:00",
   ];
   const numValue = ["0", "1", "2", "3", "4", "5", "6", "7"];
-  const dilNum = ["1", "2", "3"];
+
   return (
     <div className={styles.resultMain}>
+      <div className={styles.dateDiv}>04 February 2025</div>
       <Table responsive="sm">
         <thead>
           <tr>
-            <th>Time</th>
             {time.map((time) => (
-              <th key={time}>{time}</th>
+              <th className="bg-warning text-dark" key={time}>
+                {time}
+              </th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {dilNum.map((dil) => (
-            <tr key={dil}>
-              <td>{dil}</td>
-              {numValue.map((num) => (
-                <td key={num}>{num}</td>
-              ))}
-            </tr>
-          ))}
+          <tr>
+            {numValue.map((num) => (
+              <td className="bg-light text-danger" key={num}>
+                {num}
+              </td>
+            ))}
+          </tr>
         </tbody>
       </Table>
     </div>

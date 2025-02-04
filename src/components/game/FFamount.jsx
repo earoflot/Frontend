@@ -19,7 +19,7 @@ const FFamount = () => {
   // create a state of amount value........
 
   const [getAmount, setAmount] = useState(" ");
-  const amountValue = ["10", "50", "100", "200", "500", "1000", "2000"];
+  const amountValue = ["10", "50", "100", "200", "500"];
   // Amount value button initialise.......
   const onAmountButton = (amount) => {
     if (amount === "Submit") {
@@ -56,13 +56,12 @@ const FFamount = () => {
         ))}
       </div>
       <div className={styles.amountSubmit}>
-        {" "}
-        <button type="button" className="btn btn-outline-success">
-          Add to
-        </button>
         <button type="button" className={`btn btn-outline-danger`}>
           Clear
         </button>
+        {/* <button type="button" className="btn btn-outline-success">
+          Add to
+        </button> */}
       </div>
     </div>
   );
