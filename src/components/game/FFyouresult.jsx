@@ -6,11 +6,7 @@ import styles from "./styles/FFyouresult.module.css";
 const FFyouresult = ({ resultNumber, resultAmount }) => {
   const dateValue = ["01.01.2000"];
 
-  let value = { num: resultNumber, value: resultAmount };
-
-  console.log(value);
-
-  const valu = [1, 2, 3];
+  const value = [1, 2, 3];
 
   return (
     <div className={styles.resultDiv}>
@@ -30,11 +26,9 @@ const FFyouresult = ({ resultNumber, resultAmount }) => {
             </tr>
           </thead>
           <tbody>
-            {valu.map((val) => (
+            {value.map((val) => (
               <tr key={val}>
-                <th scope="row" className="text-light bg-danger">
-                  {val}
-                </th>
+                <th scope="row" className="text-light bg-danger"></th>
                 <td className="text-dark bg-info">0</td>
                 <td className="text-dark bg-info">0</td>
               </tr>
