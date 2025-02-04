@@ -4,7 +4,7 @@ const ffamountSlice = createSlice({
   name : "ffamount",
   initialState: [],
   reducers : {
-    submitItems : (state,action) => {
+    addItems : (state,action) => {
       return action.payload;
 
     }

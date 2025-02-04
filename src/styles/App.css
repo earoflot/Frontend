@@ -210,25 +210,8 @@ a.action_container:link {
   text-align: center;
   font-weight: 700;
 }
-/* FF GAME YOUR RESULT BUTTON CSS*/
-.btn-danger{
-  background-color: white;
-  color: #dc3545;
-  margin-bottom: 8px;
-  width: 100px;
-  height: 45px;
-  font-weight: 700;
- 
-}
-.btn-success{
-  background-color: white;
-  color: #198754;
-  margin-bottom: 8px;
-  width: 100px;
-  height: 45px;
-  font-weight: 700;
- 
-}
+/* FF GAME YOUR RESULT BUTTON CSS
+
 
 /* It is the Final Result css*/
 .text-danger{

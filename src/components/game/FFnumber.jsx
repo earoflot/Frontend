@@ -3,7 +3,7 @@ import styles from "./styles/FFnumber.module.css";
 // Icon import from React-Icon............
 import { GrAddCircle } from "react-icons/gr";
 import { AiFillDelete } from "react-icons/ai";
-const FFnumber = ({ onButtonClick, numValue, clearButton, doneButton }) => {
+const FFnumber = ({ nButtonClick, numValue, clearButton }) => {
   const buttonValue = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
   const elementFound = true;
   return (
@@ -20,22 +20,23 @@ const FFnumber = ({ onButtonClick, numValue, clearButton, doneButton }) => {
         </div>
       </div>
       <div className={styles.numDiv}>
-        {buttonValue.map((button) => (
+        {buttonValue.map((number) => (
           <button
-            key={button}
+            key={number}
             className="btn btn-outline-info"
-            onClick={() => onButtonClick(button)}
+            onClick={() => nButtonClick(number)}
           >
-            {button}
+            {number}
           </button>
         ))}
       </div>
       <div className={styles.submDiv}>
-        <button type="button" className={`btn btn-outline-danger`}>
+        <button
+          type="button"
+          className={`btn btn-outline-danger`}
+          onClick={clearButton}
+        >
           Clear
-        </button>
-        <button type="button" className="btn btn-outline-success">
-          Submit
         </button>
       </div>
     </div>

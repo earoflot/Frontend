@@ -2,46 +2,72 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 // import store actions local module...........
-import { ffnumberActions } from "../../store/game/ffnumberSlice";
+import ffnumberSlice, { ffnumberActions } from "../../store/game/ffnumberSlice";
+import { ffamountActions } from "../../store/game/ffamountSlice";
 // Import Local Modules.............
 import FFnumber from "./FFnumber";
-import Container from "../../Container/Container";
-import styles from "./styles/FFgame.module.css";
 import FFamount from "./FFamount";
 import FFyouresult from "./FFyouresult";
 import FFresult from "./FFresult";
 
 const FFgame = () => {
-  const dispatch = useDispatch();
-  // Number value button function..........
   let [getNumber, setNumber] = useState([]);
-  // it is Number click function...............
-  const onButtonClick = (button) => {
-    setNumber([button]);
-  };
+  let [getAmount, setAmount] = useState([]);
+  const dispatch = useDispatch();
+  /////////////////////////////////////////////////
+  // Number value button function..........
 
+  // it is Number click function...............
+  const nButtonClick = (number) => {
+    setNumber([number]);
+  };
   const clearButton = () => {
     setNumber([]);
+    setAmount([]);
   };
-  const doneButton = () => {
-    dispatch(ffnumberActions.doneItems(getNumber));
+  /////////////////////////////////////////////////////
+
+  // Amount value button function..............
+  const aButtonClick = (amount) => {
+    setAmount([amount]);
   };
+  const submitButton = () => {
+    if (getNumber.length > 0) {
+      if (getAmount.length > 0) {
+        dispatch(ffnumberActions.addItems(getNumber));
+        dispatch(ffamountActions.addItems(getAmount));
+        setNumber([]);
+        setAmount([]);
+      } else {
+        console.log("Not amount");
+      }
+    } else {
+      console.log("empty");
+    }
+  };
+  ///////////////////////////////////////////////////////
+  // FF Your Result Function Button...........................
+  const resultNumber = useSelector((store) => store.ffnumberSlice);
+  const resultAmount = useSelector((store) => store.ffamountSlice);
 
   return (
     <div className="row p-3 m-0">
       <div className="col-8 col-lg-4 p-0 m-0">
         <FFnumber
-          onButtonClick={onButtonClick}
+          nButtonClick={nButtonClick}
           numValue={getNumber}
           clearButton={clearButton}
-          doneButton={doneButton}
         />
       </div>
       <div className="col-4 col-lg-4 p-0 m-0">
-        <FFamount />
+        <FFamount
+          aButtonClick={aButtonClick}
+          amountValue={getAmount}
+          submitButton={submitButton}
+        />
       </div>
       <div className="col-lg-4 p-0 m-0">
-        <FFyouresult />
+        <FFyouresult resultNumber={resultNumber} resultAmount={resultAmount} />
       </div>
       <div className="col-lg p-0 m-0">
         <FFresult />

@@ -11,25 +11,9 @@ import { ffnumberActions } from "../../store/game/ffnumberSlice";
 import { GrAddCircle } from "react-icons/gr";
 import { AiFillDelete } from "react-icons/ai";
 
-const FFamount = () => {
-  // using the store actions dispatch..........
-  const dispatch = useDispatch();
-  // find the ff number store and use the data.......
-  const number = useSelector((state) => state.ffnumberSlice);
-  // create a state of amount value........
-
-  const [getAmount, setAmount] = useState(" ");
-  const amountValue = ["10", "50", "100", "200", "500"];
+const FFamount = ({ aButtonClick, amountValue, submitButton }) => {
   // Amount value button initialise.......
-  const onAmountButton = (amount) => {
-    if (amount === "Submit") {
-      dispatch(ffamountActions.submitItems(getAmount));
-
-      setAmount("");
-    } else {
-      setAmount(amount);
-    }
-  };
+  const amountBtn = [10, 50, 100, 200, 500];
   const elementFound = true;
   return (
     <div className={styles.mainAmoutdiv}>
@@ -41,27 +25,32 @@ const FFamount = () => {
             aria-label="Dollar amount (with dot and two decimal places)"
             readOnly
             placeholder="₹"
+            value={amountValue}
           />
         </div>
       </div>
       <div className={styles.amountBtn}>
-        {amountValue.map((amount) => (
+        {amountBtn.map((amount) => (
           <button
             key={amount}
             className="btn btn-outline-info"
-            onClick={() => onAmountButton(amount)}
+            onClick={() => aButtonClick(amount)}
           >
             {amount}
           </button>
         ))}
       </div>
       <div className={styles.amountSubmit}>
-        <button type="button" className={`btn btn-outline-danger`}>
+        {/* <button type="button" className={`btn btn-outline-danger`}>
           Clear
-        </button>
-        {/* <button type="button" className="btn btn-outline-success">
-          Add to
         </button> */}
+        <button
+          type="button"
+          className="btn btn-outline-success"
+          onClick={submitButton}
+        >
+          Sumit
+        </button>
       </div>
     </div>
   );

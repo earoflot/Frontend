@@ -1,27 +1,16 @@
 // External Module....
-import { useSelector } from "react-redux";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./styles/FFyouresult.module.css";
 
-const FFyouresult = () => {
-  const youResult = useSelector((state) => state.ffyouresultSlice);
-  const youNumber = useSelector((state) => state.ffnumberSlice);
-  const youAmount = useSelector((state) => state.ffamountSlice);
-
-  const timeValue = [
-    "10:30",
-    "12:00",
-    "01:30",
-    "03:00",
-    "04:30",
-    "06:00",
-    "07:30",
-    "09:00",
-  ];
+const FFyouresult = ({ resultNumber, resultAmount }) => {
   const dateValue = ["01.01.2000"];
-  const numValue = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  const value = [1, 2, 3];
+
+  let value = { num: resultNumber, value: resultAmount };
+
+  console.log(value);
+
+  const valu = [1, 2, 3];
 
   return (
     <div className={styles.resultDiv}>
@@ -41,8 +30,8 @@ const FFyouresult = () => {
             </tr>
           </thead>
           <tbody>
-            {value.map((val) => (
-              <tr>
+            {valu.map((val) => (
+              <tr key={val}>
                 <th scope="row" className="text-light bg-danger">
                   {val}
                 </th>

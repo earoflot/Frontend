@@ -4,8 +4,7 @@ const ffnumberSlice = createSlice({
   name : "ffnumber",
   initialState: [],
   reducers : {
-    doneItems : (state,action) => { 
-      console.log(action.payload);
+    addItems : (state,action) => { 
       return action.payload;
     },
     
